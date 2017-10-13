@@ -1,0 +1,40 @@
+@import '_color.scss';
+footer {
+    background: $main-color;
+    padding: 20px;
+    color: #fff;
+    font-weight: 100;
+    h4 {
+        font-weight: 100;
+        font-size: 1.1em;
+        margin-bottom: 1rem;
+    }
+    a {
+        color: #aaa;
+        font-size: 0.9rem;
+        line-height: 150%;
+    }
+    .container {
+        &>ul {
+            display: flex;
+            justify-content: space-between;
+            &>li {
+                display: inline-block;
+                vertical-align: top;
+                h6 {
+                    color: #aaa;
+                    font-size: 0.9rem;
+                    line-height: 150%;
+                    font-weight: 100;
+                }
+            }
+            @include range-width(300px, 567px) {
+                display: block;
+                &>li {
+                    display: block;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
