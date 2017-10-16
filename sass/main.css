@@ -182,7 +182,7 @@ header {
         position: relative; }
         header .container .right-top-btn .shipping span {
           position: absolute;
-          bottom: 3px;
+          bottom: 5px;
           font-size: 0.7rem;
           text-align: center;
           left: 0;

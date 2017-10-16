@@ -15,8 +15,8 @@ footer h4 {
 /* line 12, ../sass/_footer.scss */
 footer a {
   color: #aaa;
-  font-size: 0.9rem;
-  line-height: 150%;
+  font-size: 0.8rem;
+  line-height: 200%;
 }
 /* line 18, ../sass/_footer.scss */
 footer .container > ul {
@@ -31,8 +31,8 @@ footer .container > ul > li {
 /* line 24, ../sass/_footer.scss */
 footer .container > ul > li h6 {
   color: #aaa;
-  font-size: 0.9rem;
-  line-height: 150%;
+  font-size: 0.8rem;
+  line-height: 200%;
   font-weight: 100;
 }
 @media screen and (max-width: 566px) and (min-width: 300px) {
@@ -45,6 +45,15 @@ footer .container > ul > li h6 {
     display: block;
     margin-bottom: 30px;
   }
+}
+/* line 40, ../sass/_footer.scss */
+footer .container .footer-btn ul li {
+  display: inline-block;
+}
+/* line 42, ../sass/_footer.scss */
+footer .container .footer-btn ul li img {
+  width: 30px;
+  margin-right: 10px;
 }
 
 /* line 4, ../sass/_shop_list.scss */
@@ -137,17 +146,19 @@ footer .container > ul > li h6 {
   left: 16px;
   font-size: .8rem;
   width: 60px;
+  height: 60px;
+  line-height: 20px;
 }
-/* line 78, ../sass/_shop_list.scss */
+/* line 80, ../sass/_shop_list.scss */
 .shop-items ul li.new-arrived .item-label {
   background-color: #ACDDD7;
 }
-/* line 83, ../sass/_shop_list.scss */
+/* line 85, ../sass/_shop_list.scss */
 .shop-items ul li.discount-item .item-label {
   background-color: #DFAB6C;
   text-align: center;
 }
-/* line 89, ../sass/_shop_list.scss */
+/* line 91, ../sass/_shop_list.scss */
 .shop-items ul li.sold-out-item .item-label {
   background-color: #D1D1D1;
   text-align: center;
@@ -263,7 +274,7 @@ header .container .right-top-btn .shipping {
 /* line 88, ../sass/main.scss */
 header .container .right-top-btn .shipping span {
   position: absolute;
-  bottom: 3px;
+  bottom: 5px;
   font-size: 0.7rem;
   text-align: center;
   left: 0;

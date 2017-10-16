@@ -11,8 +11,8 @@ footer {
     }
     a {
         color: #aaa;
-        font-size: 0.9rem;
-        line-height: 150%;
+        font-size: 0.8rem;
+        line-height: 200%;
     }
     .container {
         &>ul {
@@ -23,8 +23,8 @@ footer {
                 vertical-align: top;
                 h6 {
                     color: #aaa;
-                    font-size: 0.9rem;
-                    line-height: 150%;
+                    font-size: 0.8rem;
+                    line-height: 200%;
                     font-weight: 100;
                 }
             }
@@ -33,6 +33,15 @@ footer {
                 &>li {
                     display: block;
                     margin-bottom: 30px;
+                }
+            }
+        }
+        .footer-btn {
+            ul li {
+                display: inline-block;
+                img {
+                    width: 30px;
+                    margin-right: 10px;
                 }
             }
         }
