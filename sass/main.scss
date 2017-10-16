@@ -39,6 +39,15 @@ h5 {
     display: block;
 }
 
+body.active {
+    height: 100%;
+    overflow: hidden;
+}
+
+.d-none {
+    display: none !important;
+}
+
 .hidden-sm {
     @include range-width(767px) {
         display: none !important;
@@ -59,6 +68,9 @@ header {
             position: absolute;
             right: 0;
             top: 10px;
+            .nav-phone {
+                display: none;
+            }
             &>div {
                 display: inline-block;
                 margin: 0 5px;
@@ -68,7 +80,7 @@ header {
                 position: relative;
                 span {
                     position: absolute;
-                    bottom: 9px;
+                    bottom: 5px;
                     font-size: 0.7rem;
                     text-align: center;
                     left: 0;
@@ -81,6 +93,51 @@ header {
             }
             img {
                 width: 20px;
+            }
+            .member {
+                position: relative;
+                ul {
+                    display: block;
+                    position: absolute;
+                    background-color: #fff;
+                    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .4));
+                    right: 5px;
+                    min-width: 300px;
+                    transform: translateY(10px);
+                    z-index: 2;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 0 5px 10px 5px;
+                        border-color: transparent transparent #fff transparent;
+                        top: -9px;
+                        right: 5px;
+                    }
+                    li {
+                        padding: 10px 20px;
+                        &.border-b {
+                            border-bottom: 1px solid $border-color;
+                        }
+                        h4 {
+                            padding: 17px 0;
+                            display: inline-block;
+                            width: calc(100% - 50px);
+                            &+span {
+                                display: inline-block;
+                                text-align: right;
+                                width: 44px;
+                                img {
+                                    width: 30px;
+                                    transform: translateY(25%);
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -129,6 +186,74 @@ header {
                 justify-content: flex-end;
                 .menu-bar {
                     margin-right: auto;
+                    position: relative;
+                    .nav-phone {
+                        position: fixed;
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        background: rgba(0, 0, 0, .6);
+                        top: 0;
+                        left: 0;
+                        z-index: 100;
+                        padding: 20px;
+                        h3 {
+                            color: #fff;
+                            font-size: 1rem;
+                            font-weight: normal;
+                        }
+                        .title {
+                            background: $main-color;
+                            padding: 10px 5px;
+                            position: relative;
+                            span {
+                                position: absolute;
+                                right: 10px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                        .itemlist {
+                            position: relative;
+                            h3 {
+                                padding-left: 5px;
+                                position: absolute;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                &:before {
+                                    content: '';
+                                    display: inline-block;
+                                    width: 0;
+                                    height: 0;
+                                    border-style: solid;
+                                    border-width: 5px 0 5px 10px;
+                                    border-color: transparent transparent transparent #ffffff;
+                                    vertical-align: middle;
+                                    padding-right: 5px;
+                                }
+                            }
+                            img {
+                                width: 100%;
+                                display: block;
+                                height: calc(33vh - 25px);
+                                object-fit: cover;
+                            }
+                            &.black {
+                                color: $main-color;
+                                h3 {
+                                    color: $main-color;
+                                    &:before {
+                                        border-color: transparent transparent transparent $main-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .shipping {
+                    span {
+                        bottom: 9px;
+                    }
                 }
             }
         }
