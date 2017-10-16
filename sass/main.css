@@ -182,7 +182,7 @@ header {
         position: relative; }
         header .container .right-top-btn .shipping span {
           position: absolute;
-          bottom: 5px;
+          bottom: 3px;
           font-size: 0.7rem;
           text-align: center;
           left: 0;
@@ -337,7 +337,7 @@ header {
                   header .container .right-top-btn .menu-bar .nav-phone .itemlist.black h3:before {
                     border-color: transparent transparent transparent #323232; }
         header .container .right-top-btn .shipping span {
-          bottom: 9px; } }
+          bottom: 7px; } }
 
 section {
   margin-bottom: 30px; }

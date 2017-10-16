@@ -263,7 +263,7 @@ header .container .right-top-btn .shipping {
 /* line 88, ../sass/main.scss */
 header .container .right-top-btn .shipping span {
   position: absolute;
-  bottom: 5px;
+  bottom: 3px;
   font-size: 0.7rem;
   text-align: center;
   left: 0;
@@ -466,7 +466,7 @@ header nav ul li:hover {
   }
   /* line 261, ../sass/main.scss */
   header .container .right-top-btn .shipping span {
-    bottom: 9px;
+    bottom: 7px;
   }
 }
 
