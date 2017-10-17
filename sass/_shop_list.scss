@@ -7,7 +7,7 @@
         font-size: 0;
         li {
             display: inline-block;
-            width: calc(100% / 3);
+            // width: calc(100% / 3);
             background-color: #fff;
             position: relative;
             vertical-align: top;
@@ -95,5 +95,20 @@
                 }
             }
         }
+    }
+}
+
+.shop-img {
+    margin: 20px 0;
+}
+
+.sold-num {
+    h4 {
+        background: $main-color;
+        color: #fff;
+        font-size: 1rem;
+        margin: 10px 15px;
+        padding: 5px;
+        font-weight: normal;
     }
 }

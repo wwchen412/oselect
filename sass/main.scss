@@ -64,7 +64,9 @@ body.active {
 
 header {
     border-bottom: 2px solid $border-color;
+    margin-bottom: 20px;
     @include range-width(300px, 768px) {
+        margin-bottom: 0;
         &.inner-page {
             background: $main-color;
         }
@@ -284,5 +286,20 @@ section {
         @include range-width(300px, 767px) {
             width: 100%;
         }
+    }
+}
+
+.o-select-3 {
+    width: calc(100% / 4);
+    @include range-width(300px, 768px) {
+        width: 100%;
+    }
+}
+
+// col
+.o-select-4 {
+    width: calc(100% / 3);
+    @include range-width(300px, 768px) {
+        width: 100%;
     }
 }
