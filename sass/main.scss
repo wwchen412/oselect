@@ -22,6 +22,11 @@ p {
     font-size: 1rem;
 }
 
+h2 {
+    font-size: 1.4rem;
+    line-height: 200%;
+}
+
 h3 {
     font-size: 1.3rem;
 }
@@ -41,6 +46,10 @@ h5 {
     display: block;
 }
 
+.border-main {
+    border: 1px solid #B3B3B3;
+}
+
 body.active {
     height: 100%;
     overflow: hidden;
@@ -48,6 +57,11 @@ body.active {
 
 .d-none {
     display: none !important;
+}
+
+.d-flex {
+    display: flex !important;
+    flex-wrap: wrap;
 }
 
 .hidden-sm {
@@ -289,6 +303,7 @@ section {
     }
 }
 
+// col
 .o-select-3 {
     width: calc(100% / 4);
     @include range-width(300px, 768px) {
@@ -296,9 +311,22 @@ section {
     }
 }
 
-// col
 .o-select-4 {
     width: calc(100% / 3);
+    @include range-width(300px, 768px) {
+        width: 100%;
+    }
+}
+
+.o-select-6 {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+    width: calc(100% / 2 - (15px * 2));
+    margin-right: 15px;
+    &:nth-child(2n) {
+        margin: 0;
+    }
     @include range-width(300px, 768px) {
         width: 100%;
     }

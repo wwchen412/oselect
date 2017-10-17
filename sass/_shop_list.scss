@@ -112,3 +112,11 @@
         font-weight: normal;
     }
 }
+
+// 商品單頁
+section {
+    &.info {
+        padding: 20px 0;
+        .container {}
+    }
+}

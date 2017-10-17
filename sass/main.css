@@ -10,8 +10,8 @@ footer {
     margin-bottom: 1rem; }
   footer a {
     color: #aaa;
-    font-size: 0.9rem;
-    line-height: 150%; }
+    font-size: 0.8rem;
+    line-height: 200%; }
   footer .container > ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -26,8 +26,8 @@ footer {
       vertical-align: top; }
       footer .container > ul > li h6 {
         color: #aaa;
-        font-size: 0.9rem;
-        line-height: 150%;
+        font-size: 0.8rem;
+        line-height: 200%;
         font-weight: 100; }
     @media screen and (max-width: 566px) and (min-width: 300px) {
       footer .container > ul {
@@ -35,6 +35,11 @@ footer {
         footer .container > ul > li {
           display: block;
           margin-bottom: 30px; } }
+  footer .container .footer-btn ul li {
+    display: inline-block; }
+    footer .container .footer-btn ul li img {
+      width: 30px;
+      margin-right: 10px; }
 
 .shop-items ul {
   border-bottom: 1px solid #D1D1D1;
@@ -42,7 +47,6 @@ footer {
   font-size: 0; }
   .shop-items ul li {
     display: inline-block;
-    width: calc(100% / 3);
     background-color: #fff;
     position: relative;
     vertical-align: top; }
@@ -103,7 +107,9 @@ footer {
       top: 16px;
       left: 16px;
       font-size: .8rem;
-      width: 60px; }
+      width: 60px;
+      height: 60px;
+      line-height: 20px; }
     .shop-items ul li.new-arrived .item-label {
       background-color: #ACDDD7; }
     .shop-items ul li.discount-item .item-label {
@@ -113,6 +119,20 @@ footer {
       background-color: #D1D1D1;
       text-align: center;
       color: #fff; }
+
+.shop-img {
+  margin: 20px 0; }
+
+.sold-num h4 {
+  background: #323232;
+  color: #fff;
+  font-size: 1rem;
+  margin: 10px 15px;
+  padding: 5px;
+  font-weight: normal; }
+
+section.info {
+  padding: 20px 0; }
 
 * {
   margin: 0;
@@ -131,6 +151,10 @@ a {
 p {
   font-size: 1rem; }
 
+h2 {
+  font-size: 1.4rem;
+  line-height: 200%; }
+
 h3 {
   font-size: 1.3rem; }
 
@@ -146,12 +170,24 @@ h5 {
   height: auto;
   display: block; }
 
+.border-main {
+  border: 1px solid #B3B3B3; }
+
 body.active {
   height: 100%;
   overflow: hidden; }
 
 .d-none {
   display: none !important; }
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 @media screen and (min-width: 767px) {
   .hidden-sm {
@@ -162,10 +198,13 @@ body.active {
     display: none !important; } }
 
 header {
-  border-bottom: 2px solid #D1D1D1; }
+  border-bottom: 2px solid #D1D1D1;
+  margin-bottom: 20px; }
   @media screen and (max-width: 767px) and (min-width: 300px) {
-    header.inner-page {
-      background: #323232; } }
+    header {
+      margin-bottom: 0; }
+      header.inner-page {
+        background: #323232; } }
   header .container {
     position: relative; }
     header .container .right-top-btn {
@@ -350,4 +389,28 @@ section {
       margin-top: -45px; } }
   @media screen and (max-width: 766px) and (min-width: 300px) {
     #hero-img img {
+      width: 100%; } }
+
+.o-select-3 {
+  width: calc(100% / 4); }
+  @media screen and (max-width: 767px) and (min-width: 300px) {
+    .o-select-3 {
+      width: 100%; } }
+
+.o-select-4 {
+  width: calc(100% / 3); }
+  @media screen and (max-width: 767px) and (min-width: 300px) {
+    .o-select-4 {
+      width: 100%; } }
+
+.o-select-6 {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+  width: calc(100% / 2 - (15px * 2));
+  margin-right: 15px; }
+  .o-select-6:nth-child(2n) {
+    margin: 0; }
+  @media screen and (max-width: 767px) and (min-width: 300px) {
+    .o-select-6 {
       width: 100%; } }
