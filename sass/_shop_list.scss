@@ -117,6 +117,32 @@
 section {
     &.info {
         padding: 20px 0;
-        .container {}
+        .container {
+            .item-info-content {
+                .content-p {
+                    padding: 15px 0;
+                }
+            }
+        }
+    }
+}
+
+.itemChoose {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    padding: 20px;
+    .items {
+        font-size: 0;
+    }
+    .items>div {
+        display: inline-block;
+        vertical-align: top;
+        .price {
+            padding: 15px 0;
+            h5 {
+                text-decoration: line-through;
+                color: #864242
+            }
+        }
     }
 }
