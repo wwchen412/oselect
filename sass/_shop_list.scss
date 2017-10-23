@@ -83,7 +83,7 @@
             }
             &.discount-item {
                 .item-label {
-                    background-color: #DFAB6C;
+                    background-color: #e9a961;
                     text-align: center;
                 }
             }
@@ -107,7 +107,7 @@
         background: $main-color;
         color: #fff;
         font-size: 1rem;
-        margin: 10px 15px;
+        margin: 10px 0;
         padding: 5px;
         font-weight: normal;
     }
@@ -130,7 +130,7 @@ section {
 .itemChoose {
     border-top: 1px solid $border-color;
     border-bottom: 1px solid $border-color;
-    padding: 20px;
+    padding: 20px 0;
     .items {
         font-size: 0;
     }
@@ -143,6 +143,37 @@ section {
                 text-decoration: line-through;
                 color: #864242
             }
+        }
+    }
+}
+
+.through-price {
+    text-decoration: line-through;
+    color: #864242;
+}
+
+.sold-out-num {
+    background: #864242;
+    color: #fff;
+    padding: 5px;
+}
+
+.item {
+    .border-main {
+        position: relative;
+    }
+    .item-label {
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: .8rem;
+        width: 65px;
+        height: 65px;
+        line-height: 20px;
+        &.discount {
+            text-align: center;
+            background-color: #e9a961;
         }
     }
 }

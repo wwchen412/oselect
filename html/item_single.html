@@ -8,6 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../Content/css/swiper.min.css">
+    <!-- jQuery JS 1.12.4 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="../Content/js/all.js ">
+    </script>
+
 </head>
 
 <body>
@@ -102,13 +107,15 @@
             <div class="container d-flex">
                 <div class="o-select-6 border-main">
                     <!-- 商品slider -->
-                    <div class=" swiper-container ">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper ">
                             <div class="swiper-slide "><img src="../Content/img/single-item.png " alt=" " class="rwd-img "></div>
                             <div class="swiper-slide "><img src="../Content/img/single-item.png " alt=" " class="rwd-img "></div>
                             <div class="swiper-slide "><img src="../Content/img/single-item.png " alt=" " class="rwd-img "></div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
+
                 </div>
                 <div class="o-select-6 item-info-content" style="border-bottom: 1px solid #B3B3B3;">
                     <h2>BALMUDA</h2>
@@ -130,41 +137,229 @@
             </div>
         </section>
 
-
+        <!-- 選擇規格 -->
         <div class="container">
+            <h2 style="font-size: 2rem;font-weight: 400;">請選擇規格</h2>
             <div class="itemChoose">
-                <h2>請選擇規格</h2>
                 <div class="items">
-                    <div class="o-select-4">
+                    <div class="o-select-4 mb-3 item">
                         <h4>BALMUDA</h4>
                         <p>The Toaster 蒸氣烤麵包機-黑</p>
-                        <div class="border-main"><img src="../Content/img/item.png" alt="" class="rwd-img"></div>
-                        <div class="price">
-                            <h5>NT$27,990</h5>
-                            <h3>NT$22,900</h3>
+                        <div class="border-main">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="item-label discount">
+                                <h4><span>37</span> % Off</h4>
+                            </div>
+
                         </div>
+                        <div class="items-cart">
+                            <div class="o-select-6">
+                                <div class="price">
+                                    <h5>NT$27,990</h5>
+                                    <h3>NT$22,900</h3>
+                                </div>
+                            </div>
+                            <div class="o-select-6">
+                                <div class="num" style="padding:15px 0;text-align:right;">
+                                    <span class="input-number-decrement">－</span><input class="input-number" type="text" value="1" min="0" max="10"><span class="input-number-increment">＋</span> 組
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <button class="btn">加入購物車</button>
                     </div>
-                    <div class="o-select-4">
+                    <div class="o-select-4 mb-3 item">
                         <h4>BALMUDA</h4>
                         <p>The Toaster 蒸氣烤麵包機-黑</p>
-                        <div class="border-main"><img src="../Content/img/item.png" alt="" class="rwd-img"></div>
-                        <div class="price">
-                            <h5>NT$27,990</h5>
-                            <h3>NT$22,900</h3>
+                        <div class="border-main">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
                         </div>
+                        <div class="items-cart">
+                            <div class="o-select-6">
+                                <div class="price">
+                                    <h5>NT$27,990</h5>
+                                    <h3>NT$22,900</h3>
+                                </div>
+                            </div>
+                            <div class="o-select-6">
+                                <div class="num" style="padding:15px 0;text-align:right;">
+                                    <span class="input-number-decrement">－</span><input class="input-number" type="text" value="1" min="0" max="10"><span class="input-number-increment">＋</span> 組
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="btn">加入購物車</button>
                     </div>
-                    <div class="o-select-4">
+                    <div class="o-select-4 mb-3 item">
                         <h4>BALMUDA</h4>
                         <p>The Toaster 蒸氣烤麵包機-白</p>
-                        <div class="border-main"><img src="../Content/img/item.png" alt="" class="rwd-img"></div>
-                        <div class="price">
-                            <h5>NT$27,990</h5>
-                            <h3>NT$22,900</h3>
+                        <div class="border-main">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
                         </div>
+                        <div class="items-cart">
+                            <div class="o-select-6">
+                                <div class="price">
+                                    <h5>NT$27,990</h5>
+                                    <h3>NT$22,900</h3>
+                                </div>
+                            </div>
+                            <div class="o-select-6">
+                                <div class="num" style="padding:15px 0;text-align:right;">
+                                    <span class="input-number-decrement">－</span><input class="input-number" type="text" value="1" min="0" max="10"><span class="input-number-increment">＋</span> 組
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- 售完 -->
+                        <button class="btn btn-soldout">售完</button>
+                    </div>
+                    <div class="o-select-4 mb-3 item">
+                        <h4>BALMUDA</h4>
+                        <p>The Toaster 蒸氣烤麵包機-白</p>
+                        <div class="border-main">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="items-cart">
+                            <div class="o-select-6">
+                                <div class="price">
+                                    <h5>NT$27,990</h5>
+                                    <h3>NT$22,900</h3>
+                                </div>
+                            </div>
+                            <div class="o-select-6">
+                                <div class="num" style="padding:15px 0;text-align:right;">
+                                    <span class="input-number-decrement">－</span><input class="input-number" type="text" value="1" min="0" max="10"><span class="input-number-increment">＋</span> 組
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="btn">加入購物車</button>
+                    </div>
+                    <div class="o-select-4 mb-3 item">
+                        <h4>BALMUDA</h4>
+                        <p>The Toaster 蒸氣烤麵包機-白</p>
+                        <div class="border-main">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                    <img src="../Content/img/item.png" alt="" class="rwd-img swiper-slide">
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="items-cart">
+                            <div class="o-select-6">
+                                <div class="price">
+                                    <h5>NT$27,990</h5>
+                                    <h3>NT$22,900</h3>
+                                </div>
+                            </div>
+                            <div class="o-select-6">
+                                <div class="num" style="padding:15px 0;text-align:right;">
+                                    <span class="input-number-decrement">－</span><input class="input-number" type="text" value="1" min="0" max="10"><span class="input-number-increment">＋</span> 組
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="btn">加入購物車</button>
                     </div>
                 </div>
             </div>
 
+        </div>
+        <!-- 推薦商品 -->
+        <div class="container" style="margin-bottom:60px;">
+            <h3 style="text-align:center;padding:15px 0;border-bottom:solid 1px #B3B3B3;" class="mb-3">您可能會喜歡</h3>
+            <div class="relative-items row">
+                <div class="o-select-4 mb-3">
+                    <h4>BALMUDA</h4>
+                    <p>The Toaster 蒸氣烤麵包機-黑</p>
+                    <div class="coverimg">
+                        <a href=""> <img src="../Content/img/item.png" alt="" class="rwd-img"></a>
+
+                    </div>
+                    <div class="sold-out-num mb-3">
+                        <h4>已賣出<span>1014</span>件</h4>
+                    </div>
+                    <h4>BALMUDA</h4>
+                    <p class="mb-3">The Toaster 蒸氣烤麵包機-黑</p>
+                    <div class="price">
+                        <h5 class="through-price">NT$27,990</h5>
+                        <h3>NT$22,900</h3>
+                    </div>
+
+                </div>
+                <div class="o-select-4 mb-3">
+                    <h4>BALMUDA</h4>
+                    <p>The Toaster 蒸氣烤麵包機-黑</p>
+                    <div class="coverimg">
+                        <a href=""> <img src="../Content/img/item3.png" alt="" class="rwd-img"></a>
+                    </div>
+
+
+                    <div class="sold-out-num mb-3">
+                        <h4>已賣出<span>1014</span>件</h4>
+                    </div>
+                    <h4>BALMUDA</h4>
+                    <p class="mb-3">The Toaster 蒸氣烤麵包機-黑</p>
+                    <div class="price">
+                        <h5 class="through-price">NT$27,990</h5>
+                        <h3>NT$22,900</h3>
+                    </div>
+
+                </div>
+                <div class="o-select-4 mb-3">
+                    <h4>BALMUDA</h4>
+                    <p>The Toaster 蒸氣烤麵包機-黑</p>
+                    <div class="cover-img">
+                        <a href=""><img src="../Content/img/item.png" alt="" class="rwd-img"></a>
+                    </div>
+
+
+                    <div class="sold-out-num mb-3">
+                        <h4>已賣出<span>1014</span>件</h4>
+                    </div>
+                    <h4>BALMUDA</h4>
+                    <p class="mb-3">The Toaster 蒸氣烤麵包機-黑</p>
+                    <div class="price">
+                        <h5 class="through-price">NT$27,990</h5>
+                        <h3>NT$22,900</h3>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     <!-- footer -->
@@ -247,13 +442,26 @@
         </div>
 
     </footer>
-    <!-- jQuery JS 1.12.4 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
     <script src="../Content/js/swiper.min.js "></script>
+
     <script>
-        var swiper = new Swiper('.swiper-container');
-    </script>
-    <script src="../Content/js/all.js ">
+        var swipers = document.querySelectorAll('.swiper-container');
+
+        for (a = 0; a < swipers.length; a++) {
+            $(swipers).eq(a).addClass('swiper-container' + a);
+            $(swipers).find('.swiper-pagination').addClass('swiper-pagination' + a);
+            var swiper = new Swiper('.swiper-container' + a, {
+                pagination: {
+                    el: '.swiper-pagination' + a
+                },
+            });
+        }
+
+        var input_num = document.querySelectorAll('.input-number');
+        for (i = 0; i < input_num.length; i++) {
+            $(input_num).eq(i).addClass('addnum' + i);
+            inputNumber($('.addnum' + i));
+        }
     </script>
 </body>
 
