@@ -9,31 +9,53 @@
     <link rel="stylesheet" href="../css/main.css">
     <!-- jQuery JS 1.12.4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
     <script src="../Content/js/all.js"></script>
 
 </head>
 
 <body>
     <div class="login-bg">
-        <form action="" class="login-from">
+        <form action="" class="login-from" id="loginform">
             <div class="form-logo">
                 <img src="../Content/img/logo.svg" alt="" style="width:150px;">
             </div>
             <h2 style="margin-top:40px;margin-bottom:10px;">登入</h2>
             <div class="form-group">
-                <input type="text" placeholder="身分證字號">
+                <input type="text" placeholder="身分證字號" class="required" minlength="10" maxlength="10">
             </div>
             <div class="form-group">
-                <input type="text" placeholder="密碼">
+                <input type="password" name="user_pwd" placeholder="密碼" class="required" minlength="6" maxlength="12">
             </div>
             <p style="text-align:right;font-size:.8rem;" class="mb-3">
                 <a href="">忘記密碼嗎？</a>
             </p>
-            <button class="btn" style="margin:10px 0;">登入</button>
+            <button type="submit" class="btn" style="margin:10px 0;">登入</button>
             <a href="" style="font-size:.8rem;">還不是會員？</a>
         </form>
     </div>
 
+    <script>
+        $(document).ready(function() {
+            $("#loginform").validate({
+                submitHandler: function(form) {
+                    //驗證成功之後就會進到這邊：
+                    //方法一：直接把表單 POST 或 GET 到你的 Action URL
+                    //方法二：讀取某些欄位的資料，ajax 給別的 API。
+                    //此處測試方法一的寫法如下：
+                    form.submit();
+                },
+                errorPlacement: function(error, element) {
+                    //你可以自己決定錯誤訊息要放在什麼地方
+                    //預設的是 element.after(error);
+                    element.closest('.form-group').append(error);
+                },
+                rules: {
+
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

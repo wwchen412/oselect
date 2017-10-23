@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="../css/main.css">
     <!-- jQuery JS 1.12.4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
     <script src="../Content/js/all.js"></script>
 
 </head>
 
 <body>
     <div class="login-bg">
-        <form action="" class="login-from">
+        <form action="" class="login-from" id="signupform">
             <div class="form-logo">
                 <img src="../Content/img/logo.svg" alt="" style="width:150px;">
             </div>
@@ -25,29 +26,47 @@
 
 
             <div class="form-group">
-                <input type="text" placeholder="身份證字號 (登入帳號，不得修改及重複申請)">
+                <input type="text" placeholder="身份證字號 (登入帳號，不得修改及重複申請)" class="required">
             </div>
             <div class="form-group">
-                <input type="text" placeholder="密碼 (密碼至少為6個以上的英文數字組合)">
+                <input type="password" name="user_pwd" placeholder="密碼 (密碼至少為6個以上的英文數字組合)" class="required" minlength="6">
             </div>
             <div class="form-group">
-                <input type="text" placeholder="密碼確認">
+                <input type="text" name="user_pwd_check" placeholder="密碼確認" class="required">
             </div>
             <p style="text-align:right;font-size:.8rem;">密碼確認成功</p>
             <div class="form-group">
-                <input type="text" placeholder="電子郵件">
+                <input type="email" name="email" placeholder="電子郵件" class="required">
             </div>
             <div class="form-group">
-                <input type="text" placeholder="手機號碼 （不得修改及重複申請）">
+                <input type="tel" name="phone" placeholder="手機號碼 （不得修改及重複申請）" class="required">
             </div>
-            <p style="" class=" mb-3 ">
-                按下建立帳號即表示我已詳讀且同意O-SELECT的<a href="" style="text-decoration:underline;">使用條款</a>。
-            </p>
-            <button class="btn " style="margin:10px 0; ">建立帳號</button>
+            <!-- <p class="mb-3" style="display:inline;">
+                按下建立帳號即表示我已詳讀且同意O-SELECT的</a>
+                <a href="" style="text-decoration:underline;font-size:.8rem;display:inline;">使用條款</a> 。
+            </p> -->
+            <button type="submit" class="btn" style="margin:10px 0;">建立帳號</button>
 
         </form>
     </div>
+    <script>
+        $(document).ready(function() {
+            $("#signupform").validate({
+                submitHandler: function(form) {
 
+                    form.submit();
+                },
+                errorPlacement: function(error, element) {
+                    //你可以自己決定錯誤訊息要放在什麼地方
+                    //預設的是 element.after(error);
+                    element.closest('.form-group').append(error);
+                },
+                rules: {
+
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

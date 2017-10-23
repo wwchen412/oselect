@@ -296,6 +296,16 @@ section.info .container .item-info-content .content-p {
   font-size: 0.8rem;
 }
 
+/* line 44, ../sass/_login.scss */
+.error {
+  color: #903d40;
+  font-size: 0.8rem;
+}
+/* line 47, ../sass/_login.scss */
+.error:focus {
+  outline: 2px solid #903d40;
+}
+
 /* line 6, ../sass/main.scss */
 * {
   margin: 0;
