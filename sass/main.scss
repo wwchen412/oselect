@@ -2,6 +2,7 @@
 @import '_mixin.scss';
 @import '_footer.scss';
 @import '_shop_list.scss';
+@import '_login.scss';
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +55,12 @@ h5 {
     font-size: 1rem;
 }
 
-.btn-soldout {
+a.btn {
+    color: #fff;
+}
+
+.btn-soldout,
+.btn-disable {
     background: $border-color;
     pointer-events: none;
 }
@@ -71,6 +77,12 @@ h5 {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.container-fluid-sm {
+    @include range-width(0, 768px) {
+        padding: 0;
+    }
 }
 
 .rwd-img {
@@ -369,6 +381,7 @@ section {
     }
     @include range-width(300px, 768px) {
         width: 100%;
+        margin: 0;
     }
 }
 
