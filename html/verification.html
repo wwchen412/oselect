@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="../css/main.css">
     <!-- jQuery JS 1.12.4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
     <script src="../Content/js/all.js"></script>
 
 </head>
 
 <body>
     <div class="login-bg">
-        <form action="" class="login-from">
+        <form action="ver-sucess.html" class="login-from" id="verForm">
             <div class="form-logo">
                 <img src="../Content/img/logo.svg" alt="" style="width:150px;">
             </div>
@@ -24,18 +25,53 @@
             <p>請輸入驗證碼共X碼。</p>
 
             <div class="form-group">
-                <input type="text" placeholder="驗證碼">
+                <input type="text" placeholder="驗證碼" class="required">
             </div>
             <p style="text-align:right;font-size:.8rem;" class="mb-3">
                 <a href="">忘記密碼嗎？</a>
             </p>
 
-            <button class="btn btn-disable" style="margin:10px 0;">60秒後可重發</button>
+            <button class="btn btn-disable btn-disable-time" style="margin:10px 0;" onclick="numtime(60)"></button>
             <button class="btn" style="margin:10px 0;">確定</button>
 
         </form>
     </div>
+    <script>
+        $(document).ready(function() {
+            $("#verForm").validate({
+                submitHandler: function(form) {
 
+                    form.submit();
+                },
+                errorPlacement: function(error, element) {
+
+                    element.closest('.form-group').append(error);
+                }
+            });
+        });
+        // 驗證碼發送
+        var btnTime = document.querySelector('.btn-disable-time');
+        var time = 60;
+
+        function numtime(o) {
+            if (time == 0) {
+                btnTime.classList.remove('btn-disable');
+                btnTime.innerHTML = "再次送出驗證碼";
+                time = 60;
+            } else {
+                btnTime.classList.add('btn-disable');
+                o.value = "重新发送(" + time + ")";
+                btnTime.innerHTML = +time + "後可重新發送";
+                time--;
+                setTimeout(function() {
+                        numtime(o);
+
+                    },
+                    1000)
+            }
+        }
+        numtime(60);
+    </script>
 </body>
 
 </html>

@@ -26,20 +26,20 @@
 
 
             <div class="form-group">
-                <input type="text" placeholder="身份證字號 (登入帳號，不得修改及重複申請)" class="required">
+                <input type="text" placeholder="身份證字號 (登入帳號，不得修改及重複申請)" class="required chkPid" maxlength="10">
             </div>
             <div class="form-group">
-                <input type="password" name="user_pwd" placeholder="密碼 (密碼至少為6個以上的英文數字組合)" class="required" minlength="6">
+                <input type="password" id="user_pwd" name="user_pwd" placeholder="密碼 (密碼至少為6個以上的英文數字組合)" class="required" minlength="6">
             </div>
             <div class="form-group">
-                <input type="text" name="user_pwd_check" placeholder="密碼確認" class="required">
+                <input type="password" name="user_pwd_again" placeholder="密碼確認" class="required  equalTo">
             </div>
-            <p style="text-align:right;font-size:.8rem;">密碼確認成功</p>
+            <!-- <p style="text-align:right;font-size:.8rem;">密碼確認成功</p> -->
             <div class="form-group">
-                <input type="email" name="email" placeholder="電子郵件" class="required">
+                <input type="email" name="email" placeholder="電子郵件" class="required email">
             </div>
             <div class="form-group">
-                <input type="tel" name="phone" placeholder="手機號碼 （不得修改及重複申請）" class="required">
+                <input type="tel" name="phone" placeholder="手機號碼 （不得修改及重複申請）" class="required mobileTaiwan">
             </div>
             <!-- <p class="mb-3" style="display:inline;">
                 按下建立帳號即表示我已詳讀且同意O-SELECT的</a>
@@ -57,12 +57,13 @@
                     form.submit();
                 },
                 errorPlacement: function(error, element) {
-                    //你可以自己決定錯誤訊息要放在什麼地方
-                    //預設的是 element.after(error);
+
                     element.closest('.form-group').append(error);
                 },
                 rules: {
-
+                    user_pwd_again: {
+                        equalTo: '#user-pwd'
+                    }
                 }
             });
         });

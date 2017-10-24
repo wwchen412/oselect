@@ -39,15 +39,10 @@
         $(document).ready(function() {
             $("#loginform").validate({
                 submitHandler: function(form) {
-                    //驗證成功之後就會進到這邊：
-                    //方法一：直接把表單 POST 或 GET 到你的 Action URL
-                    //方法二：讀取某些欄位的資料，ajax 給別的 API。
-                    //此處測試方法一的寫法如下：
                     form.submit();
                 },
                 errorPlacement: function(error, element) {
-                    //你可以自己決定錯誤訊息要放在什麼地方
-                    //預設的是 element.after(error);
+
                     element.closest('.form-group').append(error);
                 },
                 rules: {
