@@ -5,6 +5,7 @@
         border-bottom: 1px solid $border-color;
         border-top: 1px solid $border-color;
         font-size: 0;
+        margin: 0 -15px;
         li {
             display: inline-block;
             // width: calc(100% / 3);
@@ -137,6 +138,13 @@ section {
     .items>div {
         display: inline-block;
         vertical-align: top;
+        @include range-width(300px, 768px) {
+            padding-bottom: 15px;
+            border-bottom: 1px solid $border-color;
+        }
+        &>h4 {
+            margin-top: 36px;
+        }
         .price {
             padding: 15px 0;
             h5 {
@@ -156,6 +164,9 @@ section {
     background: #864242;
     color: #fff;
     padding: 5px;
+    @include range-width(300px, 768px) {
+        margin: 0 -15px;
+    }
 }
 
 .item {
@@ -175,5 +186,16 @@ section {
             text-align: center;
             background-color: #e9a961;
         }
+    }
+}
+
+.border-bottom {
+    display: none;
+    @include range-width(300px, 768px) {
+        display: block;
+        margin: 0 -15px;
+        width: calc(100% + 30px);
+        height: 1px;
+        background-color: #D1D1D1;
     }
 }
