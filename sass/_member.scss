@@ -82,6 +82,7 @@
          flex-wrap: nowrap;
          padding: 10px;
          width: 100%;
+         border-bottom: 1px solid $border-color;
          .content {
              @extend %form;
              @include range-width(300px, 769px) {
@@ -90,5 +91,38 @@
              }
          }
      }
-     .content-list {}
+     .content-lists {
+         padding: 20px 0;
+         display: flex;
+         flex: wrap;
+         align-items: center;
+         border-bottom: 1px solid $border-color;
+         .content-list {
+             display: inline-block;
+             vertical-align: middle;
+             width: 12.5%;
+             @include range-width(300px, 769px) {
+                 width: 20%;
+             }
+             &:last-child {
+                 margin-left: auto;
+             }
+             img {
+                 width: 100%;
+             }
+         }
+     }
+     .list-price {
+         padding: 20px 0;
+         text-align: right;
+         .price {
+             display: inline-block;
+             width: 12.5%;
+             text-align: left;
+             @include range-width(300px, 769px) {
+                 width: 25%;
+                 text-align: right;
+             }
+         }
+     }
  }
