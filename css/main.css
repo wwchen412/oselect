@@ -516,7 +516,7 @@ section.info .container .item-info-content .content-p {
 @media screen and (max-width: 768px) and (min-width: 300px) {
   /* line 91, ../sass/_shipping.scss */
   .shipping-list .shipping-img {
-    width: 150px;
+    width: 100%;
   }
 }
 /* line 97, ../sass/_shipping.scss */
@@ -530,7 +530,7 @@ section.info .container .item-info-content .content-p {
 @media screen and (max-width: 768px) and (min-width: 300px) {
   /* line 97, ../sass/_shipping.scss */
   .shipping-list .shipping-content {
-    width: calc(100% - 150px);
+    width: 100%;
   }
 }
 /* line 106, ../sass/_shipping.scss */

@@ -91,7 +91,7 @@
     .shipping-img {
         width: 300px;
         @include range-width(300px, 769px) {
-            width: 150px;
+            width: 100%;
         }
     }
     .shipping-content {
@@ -101,7 +101,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         @include range-width(300px, 769px) {
-            width: calc(100% - 150px);
+            width: 100%;
         }
         &>* {
             width: 100%;
