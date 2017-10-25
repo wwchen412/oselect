@@ -1,0 +1,36 @@
+ @import '_color.scss';
+ @import '_mixin.scss';
+ .form-group {
+     input {
+         width: 100%;
+         padding: 10px;
+         border: 1px solid $border-color;
+         margin: 10px 0;
+     }
+ }
+ 
+ .member-form {
+     p {
+         font-size: 0.8rem;
+     }
+     .o-select-6 {
+         margin-right: 150px;
+         width: calc(100% / 2 - (150px / 2));
+         @include range-width(300px, 769px) {
+             margin-right: 0;
+             width: 100%;
+         }
+         &:nth-child(2n) {
+             margin-right: 0;
+         }
+         .form-group {
+             .o-select-6 {
+                 margin-right: 15px;
+                 width: calc(100% / 2 - (15px / 2));
+                 &:nth-child(2n) {
+                     margin-right: 0;
+                 }
+             }
+         }
+     }
+ }
