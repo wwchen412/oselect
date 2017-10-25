@@ -381,6 +381,22 @@ section.info .container .item-info-content .content-p {
   margin-right: 0;
 }
 
+/* line 41, ../sass/_member.scss */
+.info-contents {
+  padding: 40px 0;
+}
+/* line 43, ../sass/_member.scss */
+.info-contents p {
+  margin-bottom: 1rem;
+}
+/* line 45, ../sass/_member.scss */
+.info-contents p .title {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 40px;
+}
+
 /* line 3, ../sass/_shipping.scss */
 .ship-left {
   width: calc(60% - (150px / 2));

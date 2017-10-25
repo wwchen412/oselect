@@ -37,3 +37,16 @@
          }
      }
  }
+ 
+ .info-contents {
+     padding: 40px 0;
+     p {
+         margin-bottom: 1rem;
+         .title {
+             display: inline-block;
+             width: 80px;
+             text-align: right;
+             margin-right: 40px;
+         }
+     }
+ }
