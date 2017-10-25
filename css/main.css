@@ -391,67 +391,95 @@ section.info .container .item-info-content .content-p {
     margin: 0;
   }
 }
+/* line 13, ../sass/_shipping.scss */
+.ship-left .select label {
+  position: relative;
+  display: inline-block;
+}
+/* line 16, ../sass/_shipping.scss */
+.ship-left .select label:after {
+  pointer-events: none;
+  content: '';
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 7.5px 0 7.5px;
+  border-color: #cccccc transparent transparent transparent;
+}
+/* line 30, ../sass/_shipping.scss */
+.ship-left .select select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 5px 30px 5px 20px;
+  background: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 0;
+}
 
-/* line 14, ../sass/_shipping.scss */
+/* line 41, ../sass/_shipping.scss */
 .ship-right {
   width: calc(40% - (150px / 2));
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 14, ../sass/_shipping.scss */
+  /* line 41, ../sass/_shipping.scss */
   .ship-right {
     width: 100%;
     margin: 0;
   }
 }
-/* line 22, ../sass/_shipping.scss */
+/* line 49, ../sass/_shipping.scss */
 .ship-right .price {
   margin-top: 40px;
   background: #F2F2F2;
 }
-/* line 25, ../sass/_shipping.scss */
+/* line 52, ../sass/_shipping.scss */
 .ship-right .price li {
   padding: 10px;
   text-align: right;
   border-bottom: 1px solid #D1D1D1;
 }
-/* line 29, ../sass/_shipping.scss */
+/* line 56, ../sass/_shipping.scss */
 .ship-right .price li span {
   display: inline-block;
   min-width: 100px;
 }
-/* line 33, ../sass/_shipping.scss */
+/* line 60, ../sass/_shipping.scss */
 .ship-right .price li:last-child {
   border: 0;
 }
 
-/* line 40, ../sass/_shipping.scss */
+/* line 67, ../sass/_shipping.scss */
 .shipping-list {
   font-size: 0;
   display: flex;
   border-bottom: 1px solid #D1D1D1;
 }
-/* line 44, ../sass/_shipping.scss */
+/* line 71, ../sass/_shipping.scss */
 .shipping-list:last-child {
   border: 0;
 }
-/* line 47, ../sass/_shipping.scss */
+/* line 74, ../sass/_shipping.scss */
 .shipping-list > div {
   display: inline-block;
   vertical-align: top;
 }
-/* line 51, ../sass/_shipping.scss */
+/* line 78, ../sass/_shipping.scss */
 .shipping-list .shipping-img {
   width: 300px;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 51, ../sass/_shipping.scss */
+  /* line 78, ../sass/_shipping.scss */
   .shipping-list .shipping-img {
     width: 150px;
   }
 }
-/* line 57, ../sass/_shipping.scss */
+/* line 84, ../sass/_shipping.scss */
 .shipping-list .shipping-content {
   width: calc(100% - 300px);
   padding: 20px;
@@ -460,38 +488,38 @@ section.info .container .item-info-content .content-p {
   flex-direction: column;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 57, ../sass/_shipping.scss */
+  /* line 84, ../sass/_shipping.scss */
   .shipping-list .shipping-content {
     width: calc(100% - 150px);
   }
 }
-/* line 66, ../sass/_shipping.scss */
+/* line 93, ../sass/_shipping.scss */
 .shipping-list .shipping-content > * {
   width: 100%;
 }
-/* line 69, ../sass/_shipping.scss */
+/* line 96, ../sass/_shipping.scss */
 .shipping-list .shipping-content .delAndprice {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
 }
-/* line 73, ../sass/_shipping.scss */
+/* line 100, ../sass/_shipping.scss */
 .shipping-list .shipping-content .delAndprice > * {
   display: inline;
 }
-/* line 76, ../sass/_shipping.scss */
+/* line 103, ../sass/_shipping.scss */
 .shipping-list .shipping-content .delAndprice h5 {
   text-align: right;
 }
 
-/* line 84, ../sass/_shipping.scss */
+/* line 111, ../sass/_shipping.scss */
 .status ol {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
 }
-/* line 89, ../sass/_shipping.scss */
+/* line 116, ../sass/_shipping.scss */
 .status ol:after {
   content: '';
   display: block;
@@ -504,7 +532,7 @@ section.info .container .item-info-content .content-p {
   background: #D1D1D1;
   z-index: 0;
 }
-/* line 101, ../sass/_shipping.scss */
+/* line 128, ../sass/_shipping.scss */
 .status ol li {
   font-size: 1rem;
   display: inline-block;
@@ -514,15 +542,15 @@ section.info .container .item-info-content .content-p {
   background: #fff;
   padding: 0 5px;
 }
-/* line 109, ../sass/_shipping.scss */
+/* line 136, ../sass/_shipping.scss */
 .status ol li p {
   font-size: 0.8rem;
 }
-/* line 113, ../sass/_shipping.scss */
+/* line 140, ../sass/_shipping.scss */
 .status ol li.active .dot {
   background-color: #3c5082;
 }
-/* line 117, ../sass/_shipping.scss */
+/* line 144, ../sass/_shipping.scss */
 .status ol li .dot {
   line-height: 50px;
   text-align: center;
@@ -534,11 +562,11 @@ section.info .container .item-info-content .content-p {
   border-radius: 50%;
   position: relative;
 }
-/* line 138, ../sass/_shipping.scss */
+/* line 165, ../sass/_shipping.scss */
 .status ol li:last-child {
   margin: 0;
 }
-/* line 141, ../sass/_shipping.scss */
+/* line 168, ../sass/_shipping.scss */
 .status ol li:last-child .dot:after {
   display: none;
 }
