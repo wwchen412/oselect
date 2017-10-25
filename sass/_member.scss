@@ -6,6 +6,9 @@
          padding: 10px;
          border: 1px solid $border-color;
          margin: 10px 0;
+         &[disabled] {
+             border: 0;
+         }
      }
  }
  
