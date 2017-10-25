@@ -4,6 +4,7 @@
 @import '_shop_list.scss';
 @import '_login.scss';
 @import '_member.scss';
+@import '_shipping.scss';
 * {
     margin: 0;
     padding: 0;
@@ -132,6 +133,11 @@ body.active {
     @include range-width(300px, 767px) {
         display: none !important;
     }
+}
+
+.shadow-border {
+    border-bottom: 1px solid $border-color;
+    box-shadow: 0 3px 2px -2px rgba(51, 51, 51, .2);
 }
 
 header {

@@ -1,0 +1,129 @@
+@import '_color.scss';
+@import '_mixin.scss';
+.ship-left {
+    width: calc(60% - (150px / 2));
+    margin-right: 150px;
+    display: inline-block;
+    vertical-align: top;
+    @include range-width(300px, 769px) {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.ship-right {
+    width: calc(40% - (150px / 2));
+    display: inline-block;
+    vertical-align: top;
+    @include range-width(300px, 769px) {
+        width: 100%;
+        margin: 0;
+    }
+    .price {
+        margin-top: 40px;
+        background: #F2F2F2;
+        li {
+            padding: 10px;
+            text-align: right;
+            border-bottom: 1px solid $border-color;
+            span {
+                display: inline-block;
+                min-width: 100px;
+            }
+            &:last-child {
+                border: 0;
+            }
+        }
+    }
+}
+
+.shipping-list {
+    font-size: 0;
+    display: flex;
+    border-bottom: 1px solid $border-color;
+    &:last-child {
+        border: 0;
+    }
+    &>div {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .shipping-img {
+        width: 300px;
+        @include range-width(300px, 769px) {
+            width: 150px;
+        }
+    }
+    .shipping-content {
+        width: calc(100% - 300px);
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @include range-width(300px, 769px) {
+            width: calc(100% - 150px);
+        }
+        &>* {
+            width: 100%;
+        }
+        .delAndprice {
+            display: flex;
+            justify-content: space-between;
+            margin-top: auto;
+            &>* {
+                display: inline;
+            }
+            h5 {
+                text-align: right;
+            }
+        }
+    }
+}
+
+.status {
+    ol {
+        li {
+            font-size: 1rem;
+            display: inline-block;
+            text-align: center;
+            margin-right: 35px;
+            p {
+                font-size: 0.8rem;
+            }
+            &.active {
+                .dot {
+                    background-color: #3c5082;
+                }
+            }
+            .dot {
+                line-height: 50px;
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                color: #fff;
+                background-color: $border-color;
+                font-size: 2rem;
+                border-radius: 50%;
+                position: relative;
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    right: calc(-50% - 5px);
+                    top: 50%;
+                    width: 50%;
+                    height: 2px;
+                    background: $border-color;
+                }
+            }
+            &:last-child {
+                margin: 0;
+                .dot {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
