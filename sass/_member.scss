@@ -50,3 +50,46 @@
          }
      }
  }
+ 
+ // 訂單查詢
+ .order-form {
+     display: block;
+     .form-title {
+         display: flex;
+         flex-wrap: nowrap;
+         background-color: $border-color;
+         padding: 10px;
+         width: 100%;
+         .title {
+             font-size: 1rem;
+             padding: 0 10px;
+             flex-basis: auto;
+             flex-shrink: 1;
+             flex: 1;
+             white-space: nowrap;
+             @include range-width(300px, 769px) {
+                 width: calc(100% / 4);
+                 text-align: center;
+             }
+         }
+     }
+     .form-content {
+         display: flex;
+         flex-wrap: nowrap;
+         padding: 10px;
+         width: 100%;
+         .content {
+             font-size: 1rem;
+             padding: 0 5px;
+             flex-basis: auto;
+             flex-shrink: 1;
+             flex: 1;
+             word-wrap: break-word;
+             white-space: nowrap;
+             @include range-width(300px, 769px) {
+                 width: calc(100% / 4);
+                 text-align: center;
+             }
+         }
+     }
+ }

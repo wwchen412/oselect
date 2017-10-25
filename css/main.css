@@ -397,6 +397,59 @@ section.info .container .item-info-content .content-p {
   margin-right: 40px;
 }
 
+/* line 55, ../sass/_member.scss */
+.order-form {
+  display: block;
+}
+/* line 57, ../sass/_member.scss */
+.order-form .form-title {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #D1D1D1;
+  padding: 10px;
+  width: 100%;
+}
+/* line 63, ../sass/_member.scss */
+.order-form .form-title .title {
+  font-size: 1rem;
+  padding: 0 10px;
+  flex-basis: auto;
+  flex-shrink: 1;
+  flex: 1;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) and (min-width: 300px) {
+  /* line 63, ../sass/_member.scss */
+  .order-form .form-title .title {
+    width: calc(100% / 4);
+    text-align: center;
+  }
+}
+/* line 76, ../sass/_member.scss */
+.order-form .form-content {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+  width: 100%;
+}
+/* line 81, ../sass/_member.scss */
+.order-form .form-content .content {
+  font-size: 1rem;
+  padding: 0 5px;
+  flex-basis: auto;
+  flex-shrink: 1;
+  flex: 1;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) and (min-width: 300px) {
+  /* line 81, ../sass/_member.scss */
+  .order-form .form-content .content {
+    width: calc(100% / 4);
+    text-align: center;
+  }
+}
+
 /* line 3, ../sass/_shipping.scss */
 .ship-left {
   width: calc(60% - (150px / 2));
