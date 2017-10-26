@@ -62,9 +62,14 @@ a.btn {
 }
 
 .btn-soldout,
-.btn-disable {
+.btn-disable,
+.btn-disable-time.btn-disable {
     background: $border-color;
     pointer-events: none;
+}
+
+.btn-disable-time {
+    background: #864243;
 }
 
 .row {
@@ -370,6 +375,9 @@ header {
 
 section {
     margin-bottom: 30px;
+    @include range-width(300px, 769px) {
+        margin-bottom: 0;
+    }
 }
 
 // #wrap {

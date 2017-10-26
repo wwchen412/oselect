@@ -2,7 +2,7 @@
 @import '_mixin.scss';
 .shop-items {
     ul {
-        border-bottom: 1px solid $border-color;
+        // border-bottom: 1px solid $border-color;
         border-top: 1px solid $border-color;
         font-size: 0;
         margin: 0 -15px;
@@ -35,20 +35,25 @@
                 border: 0;
                 border-top: 1px solid $border-color;
                 padding: 0;
+                @include range-width(300px, 769px) {
+                    margin: 1rem 0 0 0;
+                }
             }
             h5 {
                 text-decoration: line-through;
                 color: #864242;
+                font-size: 1rem;
             }
             p {
                 padding: 0 15px;
+                line-height: 120%;
             }
             .buy {
-                margin-top: 50px;
+                margin-top: 30px;
                 display: flex;
                 padding: 0 15px;
                 flex-wrap: wrap;
-                margin-bottom: 20px;
+                margin-bottom: 4rem;
                 &>div {
                     display: inline-block;
                 }
@@ -68,14 +73,15 @@
                 }
             }
             .item-label {
-                padding: 10px;
+                padding: 15px;
                 position: absolute;
                 top: 16px;
                 left: 16px;
                 font-size: .8rem;
-                width: 60px;
-                height: 60px;
+                width: 80px;
+                height: 80px;
                 line-height: 20px;
+                text-align: center;
             }
             &.new-arrived {
                 .item-label {
@@ -149,7 +155,8 @@ section {
             padding: 15px 0;
             h5 {
                 text-decoration: line-through;
-                color: #864242
+                color: #864242;
+                font-size: 1rem;
             }
         }
     }
@@ -158,6 +165,7 @@ section {
 .through-price {
     text-decoration: line-through;
     color: #864242;
+    font-size: 1rem;
 }
 
 .sold-out-num {
