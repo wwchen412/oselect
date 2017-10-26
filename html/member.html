@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="../Content/css/swiper.min.css">
     <!-- jQuery JS 1.12.4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-    <script src="../Content/js/all.js ">
-    </script>
+
 
 </head>
 
@@ -27,13 +26,13 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#">電子周邊</a>
+                        <a href="shop.html">電子周邊</a>
                     </li>
                     <li>
-                        <a href="#">生活家電</a>
+                        <a href="shop.html">生活家電</a>
                     </li>
                     <li>
-                        <a href="#">居家用品</a>
+                        <a href="shop.html">居家用品</a>
                     </li>
                 </ul>
             </nav>
@@ -66,7 +65,7 @@
                     </div>
                 </div>
                 <div class="shipping">
-                    <a href="">
+                    <a href="shipping.html">
                         <img src="../Content/img/cart_1.svg" alt="" class="hidden-xs">
                         <img src="../Content/img/m-cart.svg" alt="" class="hidden-sm">
                         <span>99</span>
@@ -82,12 +81,12 @@
                             <h4>加入會員獨享多更多 !</h4>
                             <span class="close"><img src="../Content/img/close.svg" alt=""></span>
                         </li>
-                        <li><a href="http://">會員登入/註冊</a></li>
+                        <li><a href="login.html">會員登入/註冊</a></li>
                         <li>
-                            <a href="">我的帳戶</a>
+                            <a href="member-info.html">我的帳戶</a>
                         </li>
                         <li class="border-b">
-                            <a href="">訂單查詢</a>
+                            <a href="order-list.html">訂單查詢</a>
                         </li>
                         <li><a href="">最新消息</a></li>
                         <li class=""><a href="">常見問題</a></li>
@@ -101,10 +100,11 @@
     <div id="wrap">
         <div class="member-form" style="margin-bottom:60px;">
             <h2 style="text-align:center;">編輯您的會員資料</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="o-select-6">
-                        <form action="">
+            <form action="member-info.html">
+                <div class="container">
+                    <div class="row">
+                        <div class="o-select-6">
+
                             <p>Elisha Shiao</p>
                             <p>Elisha Shiao</p>
                             <div class="form-group">
@@ -153,16 +153,16 @@
                                 <input type="tel" placeholder="連絡電話 (市話/手機)">
                             </div>
 
-                        </form>
 
 
-                    </div>
-                    <div class="o-select-6">
-                        <p>運送地址</p>
-                        <div class="form-group">
-                            <div class="o-select-6">
-                                <div class="select">
-                                    <label for="" style="width:100%;">
+
+                        </div>
+                        <div class="o-select-6">
+                            <p>運送地址</p>
+                            <div class="form-group">
+                                <div class="o-select-6">
+                                    <div class="select">
+                                        <label for="" style="width:100%;">
                                 <select name="" id="" style="width:100%;">
                                     <option value="縣/市">縣/市</option>
                                     <option value="1">2</option>
@@ -171,11 +171,11 @@
                                     <option value="1">5</option>
                                 </select>
                             </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="o-select-6">
-                                <div class="select">
-                                    <label for="" style="width:100%;">
+                                <div class="o-select-6">
+                                    <div class="select">
+                                        <label for="" style="width:100%;">
                                 <select name="" id="" style="width:100%;">
                                     <option value="縣/市">縣/市</option>
                                     <option value="1">2</option>
@@ -184,34 +184,35 @@
                                     <option value="1">5</option>
                                 </select>
                             </label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="地址">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="收件人">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="連絡電話 (市話/手機)">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="電子信箱">
-                        </div>
-                        <p>更改密碼</p>
-                        <div class="form-group"><input type="password" placeholder="請輸入舊密碼"></div>
-                        <div class="form-group"><input type="password" placeholder="請輸入新密碼"></div>
-                        <div class="form-group"><input type="password" placeholder="密碼驗證"></div>
-                        <div class="form-group"> <button class="btn mb-3">更改密碼</button></div>
-                        <div class="form-group"> <button class="btn mb-3">儲存變更</button></div>
+                            <div class="form-group">
+                                <input type="text" placeholder="地址">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="收件人">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="連絡電話 (市話/手機)">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="電子信箱">
+                            </div>
+                            <p>更改密碼</p>
+                            <div class="form-group"><input type="password" placeholder="請輸入舊密碼"></div>
+                            <div class="form-group"><input type="password" placeholder="請輸入新密碼"></div>
+                            <div class="form-group"><input type="password" placeholder="密碼驗證"></div>
+                            <div class="form-group"> <button class="btn mb-3">更改密碼</button></div>
+                            <div class="form-group"> <button type="submit" class="btn mb-3">儲存變更</button></div>
 
 
 
+                        </div>
                     </div>
+
                 </div>
-
-            </div>
+            </form>
         </div>
 
     </div>
@@ -296,7 +297,8 @@
 
     </footer>
     <script src="../Content/js/swiper.min.js "></script>
-
+    <script src="../Content/js/all.js ">
+    </script>
     <script>
         var swipers = document.querySelectorAll('.swiper-container');
 

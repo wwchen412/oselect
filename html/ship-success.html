@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="../Content/css/swiper.min.css">
     <!-- jQuery JS 1.12.4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-    <script src="../Content/js/all.js ">
-    </script>
+
 
 </head>
 
@@ -27,13 +26,13 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#">電子周邊</a>
+                        <a href="shop.html">電子周邊</a>
                     </li>
                     <li>
-                        <a href="#">生活家電</a>
+                        <a href="shop.html">生活家電</a>
                     </li>
                     <li>
-                        <a href="#">居家用品</a>
+                        <a href="shop.html">居家用品</a>
                     </li>
                 </ul>
             </nav>
@@ -66,7 +65,7 @@
                     </div>
                 </div>
                 <div class="shipping">
-                    <a href="">
+                    <a href="shipping.html">
                         <img src="../Content/img/cart_1.svg" alt="" class="hidden-xs">
                         <img src="../Content/img/m-cart.svg" alt="" class="hidden-sm">
                         <span>99</span>
@@ -82,12 +81,12 @@
                             <h4>加入會員獨享多更多 !</h4>
                             <span class="close"><img src="../Content/img/close.svg" alt=""></span>
                         </li>
-                        <li><a href="http://">會員登入/註冊</a></li>
+                        <li><a href="login.html">會員登入/註冊</a></li>
                         <li>
-                            <a href="">我的帳戶</a>
+                            <a href="member-info.html">我的帳戶</a>
                         </li>
                         <li class="border-b">
-                            <a href="">訂單查詢</a>
+                            <a href="order-list.html">訂單查詢</a>
                         </li>
                         <li><a href="">最新消息</a></li>
                         <li class=""><a href="">常見問題</a></li>
@@ -105,6 +104,27 @@
                 <div class="row">
                     <form action="">
                         <div class="ship-left">
+                            <div class="status hidden-sm" style="margin:30px 0;">
+                                <ol>
+                                    <li>
+                                        <div class="dot">1</div>
+                                        <p>購物袋</p>
+                                    </li>
+                                    <li>
+                                        <div class="dot">2</div>
+                                        <p>配送資訊</p>
+                                    </li>
+                                    <li>
+                                        <div class="dot">3</div>
+                                        <p>前往付款</p>
+                                    </li>
+
+                                    <li class="active">
+                                        <div class="dot">4</div>
+                                        <p>訂單成立</p>
+                                    </li>
+                                </ol>
+                            </div>
                             <h2 class="shadow-border">訂購資料</h2>
                             <h2 style="padding:40px 0 15px;">謝謝您！您的訂單已經成立</h2>
                             <p>訂單號碼：78263016391 </p>
@@ -126,7 +146,7 @@
                             <p>407</p>
                         </div>
                         <div class="ship-right" style="margin-top:40px;">
-                            <div class="status mb-3">
+                            <div class="status mb-3 hidden-xs">
                                 <ol>
                                     <li>
                                         <div class="dot">1</div>
@@ -148,7 +168,7 @@
                                 </ol>
                             </div>
 
-                            <a class="btn mb-3" style="margin-top:60px;text-align:center;">訂購查詢</a>
+                            <a href="order-list.html" class="btn mb-3" style="margin-top:60px;text-align:center;">訂購查詢</a>
                             <a href="shop.html" class="btn" style="text-align:center;">繼續購物</a>
 
                         </div>
@@ -241,7 +261,8 @@
 
     </footer>
     <script src="../Content/js/swiper.min.js "></script>
-
+    <script src="../Content/js/all.js ">
+    </script>
     <script>
         var input_num = document.querySelectorAll('.input-number');
         for (i = 0; i < input_num.length; i++) {
