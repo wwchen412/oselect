@@ -98,12 +98,13 @@
         </div>
     </header>
     <!-- 內容 -->
-    <div id="wrap">
+    <div id="wrap" style="min-height:calc(100vh - 358px);">
         <div class="container">
 
-            <h2>訂單查詢</h2>
+            <h2 class="mb-3">訂單查詢</h2>
 
             <div class="order-form">
+                <!-- 表單標題 -->
                 <div class="form-title">
                     <div class="title">日期</div>
                     <div class="title">訂單編號</div>
@@ -114,8 +115,9 @@
                     <div class="title hidden-xs">包裹編號</div>
                     <div class="title">總額</div>
                 </div>
+                <!-- 訂單狀態標題 -->
                 <div class="form-content">
-                    <div class="content">07/09/23</div>
+                    <div class="content"><span class="arrow"></span>07/09/23</div>
                     <div class="content">A00000001</div>
                     <div class="content hidden-xs">3</div>
                     <div class="content">確認中</div>
@@ -124,53 +126,137 @@
                     <div class="content hidden-xs">A1234567890</div>
                     <div class="content">19,488</div>
                 </div>
-                <!-- 訂單商品  -->
-                <div class="content-lists">
+                <!-- 訂單內容 -->
+                <div class="form-content-items">
+                    <!-- 訂單商品 loop  -->
+                    <div class="content-lists">
 
-                    <div class="content-list">
-                        <img src="../Content/img/item.png" alt="" class="fluid-img">
+                        <div class="content-list">
+                            <img src="../Content/img/item.png" alt="" class="fluid-img">
+                        </div>
+                        <div class="content-list">
+                            <p>Nespresso</p>
+                            <p>CitiZ 膠囊咖啡機</p>
+                        </div>
+                        <div class="content-list">
+                            米色
+                        </div>
+                        <div class="content-list">
+                            2
+                        </div>
+                        <div class="content-list">
+                            11,998
+                        </div>
                     </div>
-                    <div class="content-list">
-                        <p>Nespresso</p>
-                        <p>CitiZ 膠囊咖啡機</p>
-                    </div>
-                    <div class="content-list">
-                        米色
-                    </div>
-                    <div class="content-list">
-                        2
-                    </div>
-                    <div class="content-list">
-                        11,998
-                    </div>
-                </div>
-                <div class="content-lists">
+                    <div class="content-lists">
 
-                    <div class="content-list">
-                        <img src="../Content/img/item.png" alt="" class="fluid-img">
+                        <div class="content-list">
+                            <img src="../Content/img/item.png" alt="" class="fluid-img">
+                        </div>
+                        <div class="content-list">
+                            <p>Nespresso</p>
+                            <p>CitiZ 膠囊咖啡機</p>
+                        </div>
+                        <div class="content-list">
+                            米色
+                        </div>
+                        <div class="content-list">
+                            2
+                        </div>
+                        <div class="content-list">
+                            11,998
+                        </div>
                     </div>
-                    <div class="content-list">
-                        <p>Nespresso</p>
-                        <p>CitiZ 膠囊咖啡機</p>
+
+                    <!-- 價格 -->
+                    <div class="list-price">
+                        <div class="price">會費</div>
+                        <div class="price">500</div>
                     </div>
-                    <div class="content-list">
-                        米色
+                    <!-- 總價 -->
+                    <div class="list-price">
+                        <div class="price">total</div>
+                        <div class="price">11900</div>
                     </div>
-                    <div class="content-list">
-                        2
-                    </div>
-                    <div class="content-list">
-                        11,998
+                    <!-- 收回表單 -->
+                    <div class="slideUP">
+
+                        <p> <span></span>收起訂單</p>
                     </div>
                 </div>
-                <div class="list-price">
-                    <div class="price">會費</div>
-                    <div class="price">500</div>
+                <!-- 訂單狀態標題 -->
+                <div class="form-content">
+                    <div class="content"><span class="arrow"></span>07/09/23</div>
+                    <div class="content">A00000001</div>
+                    <div class="content hidden-xs">3</div>
+                    <div class="content">確認中</div>
+                    <div class="content hidden-xs">2017/00/00</div>
+                    <div class="content hidden-xs">宅配通</div>
+                    <div class="content hidden-xs">A1234567890</div>
+                    <div class="content">19,488</div>
                 </div>
-                <div class="list-price">
-                    <div class="price">total</div>
-                    <div class="price">11900</div>
+                <!-- 訂單內容 -->
+                <div class="form-content-items">
+                    <!-- 訂單商品 loop  -->
+                    <div class="content-lists">
+
+                        <div class="content-list">
+                            <img src="../Content/img/item.png" alt="" class="fluid-img">
+                        </div>
+                        <div class="content-list">
+                            <p>Nespresso</p>
+                            <p>CitiZ 膠囊咖啡機</p>
+                        </div>
+                        <div class="content-list">
+                            米色
+                        </div>
+                        <div class="content-list">
+                            2
+                        </div>
+                        <div class="content-list">
+                            11,998
+                        </div>
+                    </div>
+                    <div class="content-lists">
+
+                        <div class="content-list">
+                            <img src="../Content/img/item.png" alt="" class="fluid-img">
+                        </div>
+                        <div class="content-list">
+                            <p>Nespresso</p>
+                            <p>CitiZ 膠囊咖啡機</p>
+                        </div>
+                        <div class="content-list">
+                            米色
+                        </div>
+                        <div class="content-list">
+                            2
+                        </div>
+                        <div class="content-list">
+                            11,998
+                        </div>
+                    </div>
+
+                    <!-- 價格 -->
+                    <div class="list-price">
+                        <div class="price">會費</div>
+                        <div class="price">500</div>
+                    </div>
+                    <!-- 總價 -->
+                    <div class="list-price">
+                        <div class="price">total</div>
+                        <div class="price">11900</div>
+                    </div>
+                    <!-- 收回表單 -->
+                    <div class="slideUP">
+
+                        <p> <span></span>收起訂單</p>
+                    </div>
                 </div>
+
+            </div>
+            <div class="text-center">
+                <a href="" class="btn text-center" style="padding:10px 30px;display:inline-block;margin:30px 0;width:auto;">返回我的帳戶</a>
             </div>
 
         </div>
@@ -257,7 +343,19 @@
 
     </footer>
 
+    <script>
+        $(function() {
+            $('.form-content').click(function() {
+                $(this).next('.form-content-items').stop().slideDown();
+                $(this).find('.arrow').addClass('trans-arrow');
 
+            })
+            $('.slideUP').click(function() {
+                $(this).parents('.form-content-items').stop().slideUp();
+                $('.arrow.trans-arrow').removeClass('trans-arrow');
+            })
+        })
+    </script>
 
 </body>
 
