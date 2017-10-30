@@ -273,14 +273,16 @@ header {
             display: inline-block;
             li {
                 display: inline-block;
-                margin: 0 20px;
+                margin: 0;
                 vertical-align: top;
-                // padding: 5px 1rem;
                 position: relative;
                 overflow: hidden;
                 padding-bottom: 10px;
                 a {
-                    padding: 0 20px;
+                    padding: 0 30px;
+                }
+                &.current_page_item {
+                    border-bottom: 3px solid #3c5082;
                 }
             }
         }
@@ -377,7 +379,7 @@ header {
     }
     #magic-line {
         position: absolute;
-        bottom: -2px;
+        bottom: 0px;
         left: 0;
         width: 100px;
         height: 3px;

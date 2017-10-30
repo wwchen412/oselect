@@ -310,13 +310,16 @@
                     left: leftPos,
                     width: newWidth
                 });
+                $('.current_page_item').delay(200).css('border-bottom-color', 'transparent');
             }, function() {
                 $magicLine.stop().animate({
                     opacity: 0,
                     left: $magicLine.data("origLeft"),
                     width: $magicLine.data("origWidth")
                 });
+                $('.current_page_item').delay(1000).css('border-bottom-color', '#3c5082');
             });
+
         });
     </script>
 </body>
