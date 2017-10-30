@@ -269,14 +269,18 @@ header {
         text-align: center;
         padding: 1rem 0;
         ul {
+            position: relative;
+            display: inline-block;
             li {
                 display: inline-block;
-                margin: 0 50px;
+                margin: 0 20px;
                 vertical-align: top;
-                padding: 5px 1rem;
-                border-bottom: 2px solid transparent;
-                &:hover {
-                    border-bottom: 2px solid #40507E;
+                // padding: 5px 1rem;
+                position: relative;
+                overflow: hidden;
+                padding-bottom: 10px;
+                a {
+                    padding: 0 20px;
                 }
             }
         }
@@ -370,6 +374,16 @@ header {
                 }
             }
         }
+    }
+    #magic-line {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100px;
+        height: 3px;
+        background: #3c5082;
+        padding: 0;
+        opacity: 0;
     }
 }
 
