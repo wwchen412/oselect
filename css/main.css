@@ -59,6 +59,10 @@ footer .container .footer-btn ul li img {
   width: 30px;
   margin-right: 10px;
 }
+/* line 51, ../sass/_footer.scss */
+footer .container .footer-btn ul + p {
+  font-size: 0.8rem;
+}
 
 /* line 4, ../sass/_shop_list.scss */
 .shop-items ul {
