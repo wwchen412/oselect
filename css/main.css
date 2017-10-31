@@ -1115,7 +1115,7 @@ header .logo a {
     position: absolute;
     left: 0;
     right: 0;
-    top: 5px;
+    top: 7.5px;
     /* z-index: 10; */
     margin: 0 auto;
     width: 150px;
@@ -1124,7 +1124,7 @@ header .logo a {
 }
 /* line 264, ../sass/main.scss */
 header .logo a img {
-  width: 120px;
+  width: 100px;
 }
 /* line 269, ../sass/main.scss */
 header nav {
