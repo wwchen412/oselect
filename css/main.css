@@ -1105,7 +1105,7 @@ header .logo {
 /* line 249, ../sass/main.scss */
 header .logo a {
   display: inline-block;
-  padding: 1rem;
+  padding: 1rem 2rem;
   background-color: #323232;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
@@ -1115,16 +1115,16 @@ header .logo a {
     position: absolute;
     left: 0;
     right: 0;
-    top: 15px;
+    top: 5px;
     /* z-index: 10; */
     margin: 0 auto;
     width: 150px;
-    z-index: 1;
+    z-index: 3;
   }
 }
 /* line 264, ../sass/main.scss */
 header .logo a img {
-  width: 150px;
+  width: 120px;
 }
 /* line 269, ../sass/main.scss */
 header nav {
