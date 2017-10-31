@@ -98,6 +98,7 @@
             <div class="container container-fluid-sm">
                 <img src="../Content/img/heroimg.png" alt="" class="rwd-img hidden-xs">
                 <img src="../Content/img/m-heroimg.png" alt="" class="rwd-img hidden-sm">
+                <div class="arrow-down"><img src="../Content/img/arrow-down.svg" class="rwd-img hidden-sm"></div>
             </div>
         </div>
         <section class="shop-items">
@@ -287,40 +288,14 @@
     </script>
     <script>
         $(function() {
-
-            var $el, leftPos, newWidth,
-                $mainNav = $("#mainNav");
-
-            $mainNav.append("<li id='magic-line'></li>");
-            var $magicLine = $("#magic-line");
-
-            $magicLine
-                .width($(".current_page_item").width())
-                .css("left", $(".current_page_item a").position().left)
-                .data("origLeft", $magicLine.position().left)
-                .data("origWidth", $magicLine.width());
-
-            $("#mainNav li").hover(function() {
-                $el = $(this);
-                leftPos = $el.position().left;
-                console.log(leftPos);
-                newWidth = $el.width();
-                $magicLine.stop().animate({
-                    opacity: 1,
-                    left: leftPos,
-                    width: newWidth
-                });
-                $('.current_page_item').delay(200).css('border-bottom-color', 'transparent');
-            }, function() {
-                $magicLine.stop().animate({
-                    opacity: 0,
-                    left: $magicLine.data("origLeft"),
-                    width: $magicLine.data("origWidth")
-                });
-                $('.current_page_item').delay(1000).css('border-bottom-color', '#3c5082');
-            });
-
-        });
+            $('.arrow-down').click(function() {
+                var shop_item_top = $('.shop-items').offset().top;
+                console.log(shop_item_top);
+                $('html, body').animate({
+                    scrollTop: shop_item_top
+                }, 1000)
+            })
+        })
     </script>
 </body>
 

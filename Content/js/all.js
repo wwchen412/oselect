@@ -42,23 +42,56 @@
 
 $('header .member').click(function() {
 
-    var member_menu = $(this).find('ul');
-    if (member_menu.hasClass('d-none')) {
-        member_menu.removeClass('d-none');
-    } else {
-        member_menu.addClass('d-none');
-    }
-    member_menu.click(function() {
-        event.stopPropagation();
-    })
-    member_menu.find('.close').click(function() {
-
-        if (!member_menu.hasClass('d-none')) {
+        var member_menu = $(this).find('ul');
+        if (member_menu.hasClass('d-none')) {
+            member_menu.removeClass('d-none');
+        } else {
             member_menu.addClass('d-none');
         }
-    })
-})
+        member_menu.click(function() {
+            event.stopPropagation();
+        })
+        member_menu.find('.close').click(function() {
 
+            if (!member_menu.hasClass('d-none')) {
+                member_menu.addClass('d-none');
+            }
+        })
+    })
+    // hover NAVBAR 底線
+$(function() {
+
+    var $el, leftPos, newWidth,
+        $mainNav = $("#mainNav");
+
+    $mainNav.append("<li id='magic-line'></li>");
+    var $magicLine = $("#magic-line");
+
+    $magicLine
+        .width($(".current_page_item").width())
+        .css("left", $(".current_page_item").position().left)
+        .data("origLeft", $magicLine.position().left)
+        .data("origWidth", $magicLine.width());
+
+    $("#mainNav li").hover(function() {
+        $el = $(this);
+        leftPos = $el.position().left;
+        console.log(leftPos);
+        newWidth = $el.width();
+        $magicLine.stop().animate({
+            left: leftPos,
+            width: newWidth
+        });
+
+    }, function() {
+        $magicLine.stop().animate({
+            left: $magicLine.data("origLeft"),
+            width: $magicLine.data("origWidth")
+        });
+
+    });
+
+});
 // menubar
 $('.menu-bar').click(function() {
     var phone_nav = $('.nav-phone');
