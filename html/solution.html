@@ -7,13 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
-
+    <!-- jQuery JS 1.12.4 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="container ">
-            <div class="logo hidden-xs">
+    <!-- header -->
+
+    <header class="inner-page">
+        <div class="container">
+            <div class="logo">
                 <a href="index.html">
                     <img src="../Content/img/logo.svg" alt="">
                 </a>
@@ -76,9 +79,10 @@
                     </a>
                     <ul class="d-none">
                         <li class="border-b">
-                            <h4>elielisaelisa@o-select.com</h4>
+                            <h4>加入會員獨享多更多 !</h4>
                             <span class="close"><img src="../Content/img/close.svg" alt=""></span>
                         </li>
+                        <li><a href="login.html">會員登入/註冊</a></li>
                         <li>
                             <a href="member-info.html">我的帳戶</a>
                         </li>
@@ -86,102 +90,38 @@
                             <a href="order-list.html">訂單查詢</a>
                         </li>
                         <li><a href="">最新消息</a></li>
-                        <li class="border-b"><a href="">常見問題</a></li>
-                        <li><a href="">登出</a></li>
+                        <li class=""><a href="">常見問題</a></li>
+
                     </ul>
                 </div>
             </div>
         </div>
     </header>
+    <!-- 內容 -->
     <div id="wrap">
-        <div id="hero-img">
-            <div class="container container-fluid-sm">
-                <img src="../Content/img/heroimg.png" alt="" class="rwd-img hidden-xs">
-                <img src="../Content/img/m-heroimg.png" alt="" class="rwd-img hidden-sm">
-                <div class="arrow-down"><img src="../Content/img/arrow-down.svg" class="rwd-img hidden-sm"></div>
-            </div>
-        </div>
-        <section class="shop-items">
-            <div class="container">
-                <h2 style="margin-bottom:1.5rem;" class="hidden-xs">熱門商品</h2>
-                <!-- 熱門商品列表 最多三種 -->
-                <ul>
-                    <li class="new-arrived o-select-4">
-                        <a href="shop.html">
-                            <img src="../Content/img/item_1.png" alt="">
-                        </a>
-                        <hr class="hidden-xs">
-                        <p><b>Dyson V8 </b></p>
-                        <p>fluffy SV10</p>
-                        <div class="buy">
+        <section class="words">
+            <div class="container-mini">
+                <div class="paragraph">
+                    <h2>免責聲明</h2>
+                    <p>當您通過進入本網站您已受日日購訂定之條款與條件所拘束，及繼續使用本網站即視為您已接受並同意遵守該條款。</p>
+                </div>
+                <div class="paragraph">
+                    <h2>責任</h2>
+                    <p>商品售賣於本網站的設計師、公司或第三方及其關聯人士向任何媒體所表達的觀點純屬其個人意見。日日購 對任何此等觀點概不負責, 而此等觀點不一定反映本公司的觀點。</p>
+                    <p>日日購 不保證使用本網站和服務均為無誤, 也不保證本網站或支援本網站的伺服器沒有病毒或其他有害成分。我們建議所有本網站的用戶確保自己已安裝最新軟件, 包括防毒軟件。</p>
+                    <p>某些事情可能在本公司的合理監管之外發生, 例如惡劣天氣。在此等情況下, 日日購 會盡力維持服務, 但對於任何未能滿足本服務條款的責任概不負責。</p>
+                </div>
+                <div class="paragraph">
+                    <h2>賠償及豁免</h2>
+                    <p>您同意我們免於承擔及應我們要求向我們, 即日日購 (包括其員工、董事、代理人、關聯人士、認可者及供應商) , 全數賠償因你任何違反服務條款的行為所致的所有責任、索賠、費用、損壞和損失, 包括律師費。這包括任何其他人士因您的行動或沒有行動的情況下利用您的帳戶使用本網站。 如果您違反服務條款而我們沒有對您的行為採取任何行動, 並不代表本公司放棄在其他違反服務條款的情況下行使我們的權利和解決措施。
+                    </p>
+                </div>
 
-                            <div class="price">
-                                <h5>NT$27,990</h5>
-                                <h3>NT$22,900</h3>
-                            </div>
-                            <div class="cart">
-                                <a href="">
-                                    <img src="../Content/img/cart.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item-label">
-                            <h4>New arrived</h4>
-                        </div>
-                        <hr class="hidden-sm">
-                    </li>
-                    <li class="discount-item o-select-4">
-                        <a href="shop.html">
-                            <img src="../Content/img/item_2.png" alt="">
-                        </a>
-                        <hr class="hidden-xs">
-                        <p><b>Dyson V8</b> </p>
-                        <p>fluffy SV10</p>
-                        <div class="buy">
 
-                            <div class="price">
-                                <h5>NT$27,990</h5>
-                                <h3>NT$22,900</h3>
-                            </div>
-                            <div class="cart">
-                                <a href="">
-                                    <img src="../Content/img/cart.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item-label">
-                            <h4>25% OFF</h4>
-                        </div>
-                        <hr class="hidden-sm">
-                    </li>
-                    <li class="sold-out-item o-select-4">
-                        <a href="shop.html">
-                            <img src="../Content/img/item.png" alt="">
-                        </a>
-                        <hr class="hidden-xs">
-                        <p><b>Dyson V8 </b></p>
-                        <p>fluffy SV10</p>
-                        <div class="buy">
-
-                            <div class="price">
-                                <h5>NT$27,990</h5>
-                                <h3>NT$22,900</h3>
-                            </div>
-                            <div class="cart">
-                                <a href="">
-                                    <img src="../Content/img/cart.svg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item-label">
-                            <h4>SOLD OUT</h4>
-                        </div>
-                        <hr class="hidden-sm">
-                    </li>
-                </ul>
             </div>
         </section>
     </div>
+    <!-- footer -->
     <footer>
         <div class="container">
             <ul>
@@ -232,19 +172,6 @@
                 </li>
                 <li>
                     <h4>聯絡我們</h4>
-                    <div class="footer-btn">
-                        <ul>
-                            <li>
-                                <a href="http://"><img src="../Content/img/fb.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="http://"><img src="../Content/img/line.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a href="http://"><img src="../Content/img/mail.svg" alt=""></a>
-                            </li>
-                        </ul>
-                    </div>
                     <ul>
 
                         <li>
@@ -258,14 +185,6 @@
                 </li>
                 <li>
                     <h4>付款方式</h4>
-                    <div class="footer-btn">
-                        <ul>
-                            <li>
-                                <a href="http://"><img src="../Content/img/atm.svg" alt=""></a>
-                            </li>
-
-                        </ul>
-                    </div>
                     <ul>
                         <li>
                             <a href="http://"></a>
@@ -282,22 +201,9 @@
         </div>
 
     </footer>
-    <!-- jQuery JS 1.12.4 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../Content/js/all.js">
-    </script>
 
-    <script>
-        $(function() {
-            $('.arrow-down').click(function() {
-                var shop_item_top = $('.shop-items').offset().top;
-                console.log(shop_item_top);
-                $('html, body').animate({
-                    scrollTop: shop_item_top
-                }, 1000)
-            })
-        })
-    </script>
+    <script src="../Content/js/all.js"></script>
+
 </body>
 
 </html>

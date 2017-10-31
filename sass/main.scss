@@ -5,6 +5,7 @@
 @import '_login.scss';
 @import '_member.scss';
 @import '_shipping.scss';
+@import '_words.scss';
 * {
     margin: 0;
     padding: 0;
@@ -86,6 +87,12 @@ a.btn {
 
 .container {
     max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-mini {
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 15px;
 }
