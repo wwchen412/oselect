@@ -374,46 +374,50 @@ label.error {
 .form-group input[disabled] {
   border: 0;
 }
+/* line 12, ../sass/_member.scss */
+.form-group input.error {
+  border: 1px solid #864243;
+}
 
-/* line 16, ../sass/_member.scss */
+/* line 19, ../sass/_member.scss */
 .member-form p {
   font-size: 0.9rem;
 }
-/* line 19, ../sass/_member.scss */
+/* line 22, ../sass/_member.scss */
 .member-form .o-select-6 {
   margin-right: 150px;
   width: calc(100% / 2 - (150px / 2));
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 19, ../sass/_member.scss */
+  /* line 22, ../sass/_member.scss */
   .member-form .o-select-6 {
     margin-right: 0;
     width: 100%;
   }
 }
-/* line 26, ../sass/_member.scss */
+/* line 29, ../sass/_member.scss */
 .member-form .o-select-6:nth-child(2n) {
   margin-right: 0;
 }
-/* line 30, ../sass/_member.scss */
+/* line 33, ../sass/_member.scss */
 .member-form .o-select-6 .form-group .o-select-6 {
   margin-right: 15px;
   width: calc(100% / 2 - (15px / 2));
 }
-/* line 33, ../sass/_member.scss */
+/* line 36, ../sass/_member.scss */
 .member-form .o-select-6 .form-group .o-select-6:nth-child(2n) {
   margin-right: 0;
 }
 
-/* line 41, ../sass/_member.scss */
+/* line 44, ../sass/_member.scss */
 .info-contents {
   padding: 40px 0;
 }
-/* line 43, ../sass/_member.scss */
+/* line 46, ../sass/_member.scss */
 .info-contents p {
   margin-bottom: 1rem;
 }
-/* line 45, ../sass/_member.scss */
+/* line 48, ../sass/_member.scss */
 .info-contents p .title {
   display: inline-block;
   width: 80px;
@@ -421,11 +425,11 @@ label.error {
   margin-right: 40px;
 }
 
-/* line 55, ../sass/_member.scss */
+/* line 58, ../sass/_member.scss */
 .order-form {
   display: block;
 }
-/* line 57, ../sass/_member.scss */
+/* line 60, ../sass/_member.scss */
 .order-form .form-title {
   display: flex;
   flex-wrap: nowrap;
@@ -434,13 +438,13 @@ label.error {
   width: 100%;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 63, ../sass/_member.scss */
+  /* line 66, ../sass/_member.scss */
   .order-form .form-title .title {
     width: calc(100% / 4);
     text-align: center;
   }
 }
-/* line 71, ../sass/_member.scss */
+/* line 74, ../sass/_member.scss */
 .order-form .form-title .title, .order-form .form-content .content {
   font-size: 1rem;
   padding: 0 5px;
@@ -450,7 +454,7 @@ label.error {
   word-wrap: break-word;
   white-space: nowrap;
 }
-/* line 80, ../sass/_member.scss */
+/* line 83, ../sass/_member.scss */
 .order-form .form-content {
   display: flex;
   flex-wrap: nowrap;
@@ -459,13 +463,13 @@ label.error {
   border-bottom: 1px solid #D1D1D1;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 86, ../sass/_member.scss */
+  /* line 89, ../sass/_member.scss */
   .order-form .form-content .content {
     width: calc(100% / 4);
     text-align: center;
   }
 }
-/* line 92, ../sass/_member.scss */
+/* line 95, ../sass/_member.scss */
 .order-form .form-content .content .arrow {
   font-size: 1rem;
   display: inline-block;
@@ -477,12 +481,12 @@ label.error {
   margin-right: 2px;
   transition: .2s;
 }
-/* line 103, ../sass/_member.scss */
+/* line 106, ../sass/_member.scss */
 .order-form .form-content .content .trans-arrow {
   transform: rotate(90deg);
   transition: .2s;
 }
-/* line 109, ../sass/_member.scss */
+/* line 112, ../sass/_member.scss */
 .order-form .content-lists {
   padding: 20px 0;
   display: flex;
@@ -490,52 +494,52 @@ label.error {
   align-items: center;
   border-bottom: 1px solid #D1D1D1;
 }
-/* line 115, ../sass/_member.scss */
+/* line 118, ../sass/_member.scss */
 .order-form .content-lists .content-list {
   display: inline-block;
   vertical-align: middle;
   width: 12.5%;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 115, ../sass/_member.scss */
+  /* line 118, ../sass/_member.scss */
   .order-form .content-lists .content-list {
     width: 20%;
   }
 }
-/* line 122, ../sass/_member.scss */
+/* line 125, ../sass/_member.scss */
 .order-form .content-lists .content-list:last-child {
   margin-left: auto;
 }
-/* line 125, ../sass/_member.scss */
+/* line 128, ../sass/_member.scss */
 .order-form .content-lists .content-list img {
   width: 100%;
 }
-/* line 130, ../sass/_member.scss */
+/* line 133, ../sass/_member.scss */
 .order-form .list-price {
   padding: 20px 0;
   text-align: right;
 }
-/* line 133, ../sass/_member.scss */
+/* line 136, ../sass/_member.scss */
 .order-form .list-price .price {
   display: inline-block;
   width: 12.5%;
   text-align: left;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 133, ../sass/_member.scss */
+  /* line 136, ../sass/_member.scss */
   .order-form .list-price .price {
     width: 25%;
     text-align: right;
   }
 }
-/* line 143, ../sass/_member.scss */
+/* line 146, ../sass/_member.scss */
 .order-form .slideUP {
   padding: 5px 15px;
   padding-left: 10px;
   border-top: 1px solid #D1D1D1;
   box-shadow: 0 3px 2px -2px rgba(51, 51, 51, 0.2);
 }
-/* line 148, ../sass/_member.scss */
+/* line 151, ../sass/_member.scss */
 .order-form .slideUP span {
   display: inline-block;
   width: 0;
@@ -546,7 +550,7 @@ label.error {
   margin-right: 5px;
 }
 
-/* line 160, ../sass/_member.scss */
+/* line 163, ../sass/_member.scss */
 .form-content-items {
   display: none;
 }
@@ -570,8 +574,9 @@ label.error {
 .select label {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
-/* line 18, ../sass/_shipping.scss */
+/* line 19, ../sass/_shipping.scss */
 .select label:after {
   pointer-events: none;
   content: '';
@@ -585,7 +590,7 @@ label.error {
   border-width: 10px 7.5px 0 7.5px;
   border-color: #cccccc transparent transparent transparent;
 }
-/* line 32, ../sass/_shipping.scss */
+/* line 33, ../sass/_shipping.scss */
 .select select {
   appearance: none;
   -webkit-appearance: none;
@@ -594,43 +599,45 @@ label.error {
   border: 1px solid #D1D1D1;
   border-radius: 0;
   margin-bottom: 15px;
+  width: 100%;
+  min-height: 29px;
 }
 
-/* line 43, ../sass/_shipping.scss */
+/* line 46, ../sass/_shipping.scss */
 .ship-right {
   width: calc(40% - (150px / 2));
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 43, ../sass/_shipping.scss */
+  /* line 46, ../sass/_shipping.scss */
   .ship-right {
     width: 100%;
     margin: 0;
   }
 }
-/* line 51, ../sass/_shipping.scss */
+/* line 54, ../sass/_shipping.scss */
 .ship-right .price {
   margin-top: 40px;
   background: #F2F2F2;
 }
-/* line 54, ../sass/_shipping.scss */
+/* line 57, ../sass/_shipping.scss */
 .ship-right .price li {
   padding: 10px;
   text-align: right;
   border-bottom: 1px solid #D1D1D1;
 }
-/* line 58, ../sass/_shipping.scss */
+/* line 61, ../sass/_shipping.scss */
 .ship-right .price li span {
   display: inline-block;
   min-width: 100px;
 }
-/* line 62, ../sass/_shipping.scss */
+/* line 65, ../sass/_shipping.scss */
 .ship-right .price li:last-child {
   border: 0;
 }
 
-/* line 69, ../sass/_shipping.scss */
+/* line 72, ../sass/_shipping.scss */
 .shipping-list {
   font-size: 0;
   display: flex;
@@ -638,43 +645,43 @@ label.error {
   padding: 20px 0;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 69, ../sass/_shipping.scss */
+  /* line 72, ../sass/_shipping.scss */
   .shipping-list {
     flex-direction: column;
   }
 }
-/* line 77, ../sass/_shipping.scss */
+/* line 80, ../sass/_shipping.scss */
 .shipping-list:last-child {
   border: 0;
 }
-/* line 80, ../sass/_shipping.scss */
+/* line 83, ../sass/_shipping.scss */
 .shipping-list .o-select-6 {
   width: calc(100% / 2 - (30px / 2));
   margin-right: 30px;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 80, ../sass/_shipping.scss */
+  /* line 83, ../sass/_shipping.scss */
   .shipping-list .o-select-6 {
     width: 100%;
     margin: 0;
   }
 }
-/* line 88, ../sass/_shipping.scss */
+/* line 91, ../sass/_shipping.scss */
 .shipping-list > div {
   display: inline-block;
   vertical-align: top;
 }
-/* line 92, ../sass/_shipping.scss */
+/* line 95, ../sass/_shipping.scss */
 .shipping-list .shipping-img {
   width: 300px;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 92, ../sass/_shipping.scss */
+  /* line 95, ../sass/_shipping.scss */
   .shipping-list .shipping-img {
     width: 100%;
   }
 }
-/* line 98, ../sass/_shipping.scss */
+/* line 101, ../sass/_shipping.scss */
 .shipping-list .shipping-content {
   width: calc(100% - 300px);
   padding: 20px;
@@ -683,38 +690,38 @@ label.error {
   flex-direction: column;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 98, ../sass/_shipping.scss */
+  /* line 101, ../sass/_shipping.scss */
   .shipping-list .shipping-content {
     width: 100%;
   }
 }
-/* line 107, ../sass/_shipping.scss */
+/* line 110, ../sass/_shipping.scss */
 .shipping-list .shipping-content > * {
   width: 100%;
 }
-/* line 110, ../sass/_shipping.scss */
+/* line 113, ../sass/_shipping.scss */
 .shipping-list .shipping-content .delAndprice {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
 }
-/* line 114, ../sass/_shipping.scss */
+/* line 117, ../sass/_shipping.scss */
 .shipping-list .shipping-content .delAndprice > * {
   display: inline;
 }
-/* line 117, ../sass/_shipping.scss */
+/* line 120, ../sass/_shipping.scss */
 .shipping-list .shipping-content .delAndprice h5 {
   text-align: right;
 }
 
-/* line 125, ../sass/_shipping.scss */
+/* line 128, ../sass/_shipping.scss */
 .status ol {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
 }
-/* line 130, ../sass/_shipping.scss */
+/* line 133, ../sass/_shipping.scss */
 .status ol:after {
   content: '';
   display: block;
@@ -727,7 +734,7 @@ label.error {
   background: #D1D1D1;
   z-index: 0;
 }
-/* line 142, ../sass/_shipping.scss */
+/* line 145, ../sass/_shipping.scss */
 .status ol li {
   font-size: 1rem;
   display: inline-block;
@@ -737,15 +744,15 @@ label.error {
   background: #fff;
   padding: 0 5px;
 }
-/* line 150, ../sass/_shipping.scss */
+/* line 153, ../sass/_shipping.scss */
 .status ol li p {
   font-size: 0.8rem;
 }
-/* line 154, ../sass/_shipping.scss */
+/* line 157, ../sass/_shipping.scss */
 .status ol li.active .dot {
   background-color: #3c5082;
 }
-/* line 158, ../sass/_shipping.scss */
+/* line 161, ../sass/_shipping.scss */
 .status ol li .dot {
   line-height: 50px;
   text-align: center;
@@ -757,34 +764,45 @@ label.error {
   border-radius: 50%;
   position: relative;
 }
-/* line 179, ../sass/_shipping.scss */
+/* line 182, ../sass/_shipping.scss */
 .status ol li:last-child {
   margin: 0;
 }
-/* line 182, ../sass/_shipping.scss */
+/* line 185, ../sass/_shipping.scss */
 .status ol li:last-child .dot:after {
   display: none;
 }
 
-/* line 191, ../sass/_shipping.scss */
+/* line 194, ../sass/_shipping.scss */
 .form-group.o-select-6 {
   width: calc(100% / 2 - (15px / 2));
   margin-right: 15px;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 191, ../sass/_shipping.scss */
+  /* line 194, ../sass/_shipping.scss */
   .form-group.o-select-6 {
     width: 100%;
     margin: 0;
   }
 }
-/* line 199, ../sass/_shipping.scss */
+/* line 202, ../sass/_shipping.scss */
 .form-group.o-select-6 .select select,
 .form-group.o-select-6 .select label {
   width: 100%;
 }
+/* line 207, ../sass/_shipping.scss */
+.form-group.o-select-6 input[type="radio"] {
+  width: auto;
+  vertical-align: middle;
+  margin: 15px 0;
+  margin-right: 5px;
+}
+/* line 213, ../sass/_shipping.scss */
+.form-group.o-select-6 label {
+  font-size: .9rem;
+}
 
-/* line 206, ../sass/_shipping.scss */
+/* line 218, ../sass/_shipping.scss */
 input[type="checkbox"],
 input[type="radio"] {
   appearance: none;
@@ -795,7 +813,7 @@ input[type="radio"] {
   vertical-align: middle;
   position: relative;
 }
-/* line 216, ../sass/_shipping.scss */
+/* line 228, ../sass/_shipping.scss */
 input[type="checkbox"]:checked:before,
 input[type="radio"]:checked:before {
   content: '✓';
@@ -807,7 +825,7 @@ input[type="radio"]:checked:before {
   margin: auto;
 }
 
-/* line 228, ../sass/_shipping.scss */
+/* line 240, ../sass/_shipping.scss */
 .sucess-title {
   padding: 30px 0 15px;
   border-bottom: 1px solid #D1D1D1;
