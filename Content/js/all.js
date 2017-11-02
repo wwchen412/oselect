@@ -44,6 +44,7 @@ $('header .member').click(function() {
 
         var member_menu = $(this).find('ul');
         if (member_menu.hasClass('d-none')) {
+            member_menu.fadeIn(500);
             member_menu.removeClass('d-none');
         } else {
             member_menu.addClass('d-none');

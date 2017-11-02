@@ -25,23 +25,28 @@ a {
 p {
     font-size: 1rem;
     line-height: 180%;
+    font-weight: normal;
 }
 
 h2 {
     font-size: 1.4rem;
     line-height: 200%;
+    font-weight: normal;
 }
 
 h3 {
     font-size: 1.3rem;
+    font-weight: normal;
 }
 
 h4 {
     font-size: .9rem;
+    font-weight: normal;
 }
 
 h5 {
     font-size: 0.9rem;
+    font-weight: normal;
 }
 
 .mb-3 {
@@ -86,13 +91,13 @@ a.btn {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .container-mini {
-    max-width: 800px;
+    max-width: 940px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -169,7 +174,7 @@ header {
         position: relative;
         .right-top-btn {
             position: absolute;
-            right: 0;
+            right: 10px;
             top: 10px;
             z-index: 2;
             .nav-phone {
@@ -182,6 +187,7 @@ header {
             }
             .shipping {
                 position: relative;
+                margin-right: 16px;
                 img {
                     width: 23px;
                 }
@@ -262,14 +268,14 @@ header {
                 position: absolute;
                 left: 0;
                 right: 0;
-                top: 7.5px;
+                top: 15px;
                 /* z-index: 10; */
                 margin: 0 auto;
                 width: 150px;
                 z-index: 3;
             }
             img {
-                width: 100px;
+                width: 76px;
             }
         }
     }
@@ -305,15 +311,17 @@ header {
         padding: 0;
         .container {
             .right-top-btn {
-                padding: 10px 0;
+                padding: 13px 0;
                 position: relative;
                 top: 0;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: flex-end;
+                right: 0;
                 .menu-bar {
                     margin-right: auto;
                     position: relative;
+                    margin-left: -3px;
                     .nav-phone {
                         position: fixed;
                         width: 100%;

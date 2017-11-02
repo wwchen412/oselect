@@ -5,7 +5,10 @@
         // border-bottom: 1px solid $border-color;
         border-top: 1px solid $border-color;
         font-size: 0;
-        margin: 0 -15px;
+        margin: 0;
+        @include range-width(300px, 769px) {
+            margin: 0 -15px;
+        }
         li {
             display: inline-block;
             // width: calc(100% / 3);
@@ -45,15 +48,21 @@
                 font-size: 1rem;
             }
             p {
-                padding: 0 15px;
                 line-height: 120%;
+                @include range-width(300px, 769px) {
+                    padding: 0 15px;
+                }
             }
             .buy {
                 margin-top: 30px;
                 display: flex;
-                padding: 0 15px;
+                padding: 0;
                 flex-wrap: wrap;
                 margin-bottom: 4rem;
+                @include range-width(300px, 769px) {
+                    margin-bottom: 15px;
+                    padding: 0 15px;
+                }
                 &>div {
                     display: inline-block;
                 }
@@ -76,12 +85,18 @@
                 padding: 15px;
                 position: absolute;
                 top: 16px;
-                left: 16px;
+                left: 0;
                 font-size: .8rem;
                 width: 80px;
                 height: 80px;
                 line-height: 20px;
                 text-align: center;
+                @include range-width(300px, 769px) {
+                    left: 16px;
+                }
+                h4 {
+                    margin-top: 5px;
+                }
             }
             &.new-arrived {
                 .item-label {
@@ -117,6 +132,9 @@
         margin: 10px 0;
         padding: 5px;
         font-weight: normal;
+        @include range-width(300px, 768px) {
+            background: #864243;
+        }
     }
 }
 

@@ -13,3 +13,24 @@
         margin-bottom: 80px;
     }
 }
+
+.slide-block {
+    h3 {
+        margin-bottom: 30px;
+    }
+    .slide-title {
+        padding: 20px 0;
+        border-top: 2px solid #CFCFCF;
+        border-bottom: 2px solid #CFCFCF;
+        margin: 10px 0;
+        p {
+            padding: 0 15px;
+            margin-bottom: 0;
+        }
+    }
+    .slide-content {
+        p {
+            padding: 0 15px;
+        }
+    }
+}
