@@ -349,6 +349,20 @@ header {
                         left: 0;
                         z-index: 100;
                         padding: 20px;
+                        .nav-phone-wrap {
+                            transition: 2s;
+                            &.slide-right {
+                                animation: slide_right .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                            }
+                        }
+                        @keyframes slide_right {
+                            0% {
+                                transform: translateX(-100%)
+                            }
+                            100% {
+                                transform: translateX(0)
+                            }
+                        }
                         h3 {
                             color: #fff;
                             font-size: 1rem;
@@ -401,6 +415,10 @@ header {
                             }
                         }
                     }
+                    .slide-right {
+                        transform: translateX(0);
+                        transition: .5s;
+                    }
                 }
                 .shipping {
                     span {
@@ -437,7 +455,7 @@ section {
     z-index: 0;
     @include range-width(300px, 767px) {
         margin: 0;
-        margin-top: -55px;
+        margin-top: -60px;
         .arrow-down {
             width: 80px;
             margin: 0 auto;
