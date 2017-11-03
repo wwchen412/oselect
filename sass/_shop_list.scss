@@ -170,7 +170,7 @@ section {
             margin-top: 36px;
         }
         .price {
-            padding: 15px 0;
+            padding: 30px 0 15px;
             h5 {
                 text-decoration: line-through;
                 color: #864242;
@@ -196,9 +196,10 @@ section {
 }
 
 .item {
-    .border-main {
+    .item-border-out {
         position: relative;
     }
+    .border-main {}
     .item-label {
         padding: 10px;
         position: absolute;
@@ -208,6 +209,10 @@ section {
         width: 65px;
         height: 65px;
         line-height: 20px;
+        z-index: 2;
+        h4 {
+            margin-top: 5px;
+        }
         &.discount {
             text-align: center;
             background-color: #e9a961;

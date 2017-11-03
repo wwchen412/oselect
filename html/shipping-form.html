@@ -103,9 +103,9 @@
     </header>
     <!-- 內容 -->
     <div id="wrap">
-        <div class="member-form" style="margin-bottom:60px;">
+        <div class="member-form" style="margin-bottom:46px;">
 
-            <div class="container">
+            <div class="container container-form">
                 <div class="row">
                     <form action="ship-success.html" id="shipping_form">
                         <div class="ship-left">
@@ -191,71 +191,15 @@
                                         </div>
 
                                     </div>
-                                    <div class="form-group" style="padding:15px 0;">
+                                    <div class="form-group">
                                         <label for="" style="font-size:.9rem;">
-                                        <input type="checkbox" style="display:inline-block;width:auto;">
+                                        <input type="checkbox" style="display:inline-block;width:auto;" class="new-address">
                                         不同配送地址</label>
                                     </div>
 
                                 </div>
 
                                 <div class="o-select-6">
-                                    <div class="form-group o-select-6">
-                                        <label for=""><p>配送地址</p></label>
-                                        <input type="text" placeholder="姓名" class="required" name="recevie_name">
-                                    </div>
-                                    <div class="form-group o-select-6">
-                                        <p>&nbsp;</p>
-                                        <label for="mr">
-                                                <input type="radio" id="mr" name="gender_re" class="required">
-                                                先生
-                                            </label>
-                                        <label for="mrs">
-                                                    <input type="radio" id="mrs" name="gender_re" class="required">
-                                                    女士
-                                                </label>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" value="090000000" disabled>
-                                    </div>
-                                    <div class="form-group">
-
-                                        <input type="text" name="address" placeholder="地址" class="required">
-                                    </div>
-                                    <div class="forms">
-                                        <div class="form-group">
-
-                                            <div class="select my-selector-b">
-                                                <div class="o-select-6">
-                                                    <label for="" class="">
-                                                      
-                                                        <select name="" id=""  class="required country2">
-                                                            <option value="縣/市">縣/市</option>
-                                                            <option value="1">2</option>
-                                                            <option value="1">3</option>
-                                                            <option value="1">4</option>
-                                                            <option value="1">5</option>
-                                                        </select>
-                                                       
-                                                   
-                                                    </label></div>
-                                                <div class="o-select-6">
-                                                    <label for=""> 
-                                                        <select name="" id=""  class="required district2">
-                                                            <option value="區域">區域</option>
-                                                            <option value="1">2</option>
-                                                            <option value="1">3</option>
-                                                            <option value="1">4</option>
-                                                            <option value="1">5</option>
-                                                        </select>
-                                                       
-                                                    </label></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
 
                                 </div>
 
@@ -268,7 +212,7 @@
                                     <div class="form-group">
                                         <label for="" style="font-size:.9rem;">
                                             <input type="radio" style="display:inline-block;width:auto;" name="val">
-                                            二聯式墊子發票</label>
+                                            二聯式電子發票</label>
 
 
                                     </div>
@@ -425,11 +369,6 @@
             elCounty: ".country",
             elDistrict: ".district"
         });
-        new TwCitySelector({
-            el: ".my-selector-b", // 同 DOM querySelector()
-            elCounty: ".country2",
-            elDistrict: ".district2"
-        });
     </script>
     <script>
         $(document).ready(function() {
@@ -445,6 +384,18 @@
 
                 }
             });
+            $('.new-address').change(function() {
+                if (this.checked) {
+                    $('.shipping-list>.o-select-6:nth-child(2)').append('<div class="form-group o-select-6"><label for=""><p>配送地址</p></label> <input type="text" placeholder="姓名" class="required" name="recevie_name"></div><div class="form-group o-select-6"><p>&nbsp;</p><label for="mr"><input type="radio" id="mr" name="gender_re" class="required">先生</label><label for="mrs"><input type="radio" id="mrs" name="gender_re" class="required">女士</label></div><div class="form-group"><input type="text" value="090000000" disabled></div><div class="form-group"><input type="text" name="address" placeholder="地址" class="required"></div><div class="forms"><div class="form-group"><div class="select my-selector-b"><div class="o-select-6"><label for="" class=""><select name="" id=""  class="required country2"><option value="縣/市">縣/市</option></select> </label></div> <div class="o-select-6"><label for="">  <select name="" id=""  class="required district2"><option value="區域">區域</option><option value="1">5</option></select></label></div></div></div></div>')
+                    new TwCitySelector({
+                        el: ".my-selector-b", // 同 DOM querySelector()
+                        elCounty: ".country2",
+                        elDistrict: ".district2"
+                    });
+                } else {
+                    $('.shipping-list>.o-select-6:nth-child(2)').html('');
+                }
+            })
         });
         var input_num = document.querySelectorAll('.input-number');
         for (i = 0; i < input_num.length; i++) {

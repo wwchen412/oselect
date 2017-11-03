@@ -1,5 +1,11 @@
 @import '_color.scss';
 @import '_mixin.scss';
+.container.container-form {
+    @include range-width(300px, 769px) {
+        padding: 0 46px;
+    }
+}
+
 .ship-left {
     width: calc(60% - (150px / 2));
     margin-right: 150px;
@@ -8,6 +14,9 @@
     @include range-width(300px, 769px) {
         width: 100%;
         margin: 0;
+        h2 {
+            padding: 4px 0 20px;
+        }
     }
 }
 
@@ -22,7 +31,7 @@
             display: block;
             position: absolute;
             right: 5px;
-            top: 8px;
+            top: 25px;
             width: 0;
             height: 0;
             border-style: solid;
@@ -33,13 +42,14 @@
     select {
         appearance: none;
         -webkit-appearance: none;
-        padding: 5px 30px 5px 20px;
+        padding: 10px 30px 10px 20px;
         background: #fff;
         border: 1px solid $border-color;
         border-radius: 0;
         margin-bottom: 15px;
+        margin-top: 10px;
         width: 100%;
-        min-height: 29px;
+        min-height: 39px;
     }
 }
 
@@ -60,7 +70,12 @@
             border-bottom: 1px solid $border-color;
             span {
                 display: inline-block;
-                min-width: 100px;
+                min-width: 40px;
+                text-align: justify;
+                &:nth-child(2) {
+                    min-width: 80px;
+                    text-align: right;
+                }
             }
             &:last-child {
                 border: 0;
@@ -135,7 +150,7 @@
             display: block;
             position: absolute;
             left: 0;
-            top: calc(50% - .8rem);
+            top: calc(50% - .8rem - 6pt);
             transform: translateY(-50%);
             width: 100%;
             height: 2px;
@@ -152,6 +167,8 @@
             padding: 0 5px;
             p {
                 font-size: 0.8rem;
+                margin-top: 12pt;
+                font-weight: bold;
             }
             &.active {
                 .dot {
@@ -165,9 +182,10 @@
                 height: 50px;
                 color: #fff;
                 background-color: $border-color;
-                font-size: 2rem;
+                font-size: 20px;
                 border-radius: 50%;
                 position: relative;
+                font-weight: bold;
                 // &:after {
                 //     content: '';
                 //     display: block;
