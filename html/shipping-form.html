@@ -138,7 +138,7 @@
 
                                 <div class="o-select-6">
                                     <div class="form-group o-select-6">
-                                        <label for=""><p>帳單地址</p></label>
+                                        <label for=""><p><b>帳單地址</b></p></label>
                                         <input type="text" placeholder="姓名" class="required" name="pay_name">
                                     </div>
                                     <div class="form-group o-select-6">
@@ -210,30 +210,33 @@
                             </div>
                             <div class="shipping-list">
                                 <div class="o-select-6">
-                                    <p>發票資訊</p>
+                                    <p><b>發票資訊</b></p>
                                     <div class="form-group">
                                         <label for="" style="font-size:.9rem;">
-                                            <input type="radio" style="display:inline-block;width:auto;" name="val">
+                                            <input type="radio" style="display:inline-block;width:auto;" name="val" value='1' class="val-choose">
                                             二聯式電子發票</label>
 
 
                                     </div>
                                     <div class="form-group">
                                         <label for="" style="font-size:.9rem;">
-                                                <input type="radio" style="display:inline-block;width:auto;" name="val">
+                                                <input type="radio" style="display:inline-block;width:auto;" name="val" class="val-choose" value="2">
                                                 三聯式紙本發票(公司行號報帳用)  
                                         </label>
 
 
                                     </div>
-                                    <div class="form-group">
+                                    <div class="company-val-form">
+                                        <!-- <div class="form-group">
 
-                                        <input type="text" placeholder="買受人">
-                                    </div>
-                                    <div class="form-group">
+                                            <input type="text" placeholder="買受人">
+                                        </div>
+                                        <div class="form-group">
 
-                                        <input type="text" placeholder="統一編號">
+                                            <input type="text" placeholder="統一編號">
+                                        </div> -->
                                     </div>
+
 
                                 </div>
                             </div>
@@ -388,7 +391,7 @@
             });
             $('.new-address').change(function() {
                 if (this.checked) {
-                    $('.shipping-list>.o-select-6:nth-child(2)').append('<div class="form-group o-select-6"><label for=""><p>配送地址</p></label> <input type="text" placeholder="姓名" class="required" name="recevie_name"></div><div class="form-group o-select-6"><p>&nbsp;</p><label for="mr"><input type="radio" id="mr" name="gender_re" class="required">先生</label><label for="mrs"><input type="radio" id="mrs" name="gender_re" class="required">女士</label></div><div class="form-group"><input type="text" value="090000000" disabled></div><div class="form-group"><input type="text" name="address" placeholder="地址" class="required"></div><div class="forms"><div class="form-group"><div class="select my-selector-b"><div class="o-select-6"><label for="" class=""><select name="" id=""  class="required country2"><option value="縣/市">縣/市</option></select> </label></div> <div class="o-select-6"><label for="">  <select name="" id=""  class="required district2"><option value="區域">區域</option><option value="1">5</option></select></label></div></div></div></div>')
+                    $('.shipping-list>.o-select-6:nth-child(2)').append('<div class="form-group o-select-6"><label for=""><p><b>配送地址</b></p></label> <input type="text" placeholder="姓名" class="required" name="recevie_name"></div><div class="form-group o-select-6"><p>&nbsp;</p><label for="mr"><input type="radio" id="mr" name="gender_re" class="required">先生 </label><label for="mrs"><input type="radio" id="mrs" name="gender_re" class="required">女士</label></div><div class="form-group"><input type="text" value="090000000" disabled></div><div class="form-group"><input type="text" name="address" placeholder="地址" class="required"></div><div class="forms"><div class="form-group"><div class="select my-selector-b"><div class="o-select-6"><label for="" class=""><select name="" id=""  class="required country2"><option value="縣/市">縣/市</option></select> </label></div> <div class="o-select-6"><label for="">  <select name="" id=""  class="required district2"><option value="區域">區域</option><option value="1">5</option></select></label></div></div></div></div>')
                     new TwCitySelector({
                         el: ".my-selector-b", // 同 DOM querySelector()
                         elCounty: ".country2",
@@ -398,6 +401,16 @@
                     $('.shipping-list>.o-select-6:nth-child(2)').html('');
                 }
             })
+            $('.val-choose').change(function() {
+
+                var a = $('input[name=val]:checked').val();
+                console.log(a);
+                if (a == 2) {
+                    $('.company-val-form').append('<div class="form-group"><input type="text" placeholder="買受人"></div> <div class="form-group"><input type="text" placeholder="統一編號"> </div>');
+                } else if (a == 1) {
+                    $('.company-val-form').html('');
+                }
+            });
         });
         var input_num = document.querySelectorAll('.input-number');
         for (i = 0; i < input_num.length; i++) {
