@@ -987,7 +987,7 @@ input[type="radio"]:checked:before {
 }
 /* line 34, ../sass/_words.scss */
 .slide-block .slide-title:before {
-  content: '+';
+  content: '＋';
   position: absolute;
   top: 12px;
   right: 20px;
@@ -996,7 +996,7 @@ input[type="radio"]:checked:before {
 }
 /* line 43, ../sass/_words.scss */
 .slide-block .slide-title.slide-active:before {
-  content: '-';
+  content: '－';
   position: absolute;
   top: 12px;
   right: 20px;
