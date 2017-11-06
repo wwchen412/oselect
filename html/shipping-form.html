@@ -407,7 +407,8 @@
                 var a = $('input[name=val]:checked').val();
 
                 if (a == 2) {
-                    $('.company-val-form').append('<div class="form-group"><input type="text" placeholder="買受人"></div> <div class="form-group"><input type="text" placeholder="統一編號"> </div>');
+                    $('.company-val-form').append('<div class="form-group" style="display:none"><input type="text" placeholder="買受人"></div> <div class="form-group"><input type="text" placeholder="統一編號"> </div>');
+                    $('.company-val-form .form-group').slideDown('fast');
                 } else if (a == 1) {
                     $('.company-val-form').html('');
                 }

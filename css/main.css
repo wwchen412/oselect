@@ -687,7 +687,7 @@ label.error {
   display: block;
   position: absolute;
   right: 5px;
-  top: 25px;
+  top: 35px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -702,8 +702,8 @@ label.error {
   background: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 0;
-  margin-bottom: 15px;
-  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-top: 20px;
   width: 100%;
   min-height: 39px;
 }
