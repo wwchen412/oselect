@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <!-- jQuery JS 1.12.4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../Content/js/all.js"></script>
 </head>
 
 <body>
@@ -103,8 +104,10 @@
     <div id="wrap">
         <section class="words">
             <div class="container-mini">
+                <h2>如何購買</h2>
+                <!-- 問題分類 -->
                 <div class="paragraph">
-                    <h2>免責聲明</h2>
+
                     <h3>付款方式</h3>
                     <div class="slide-block">
                         <div class="slide-title">
@@ -116,10 +119,47 @@
                             </p>
                         </div>
                     </div>
+                    <div class="slide-block">
+                        <div class="slide-title">
+                            <p>如何知道我成功付款了呢</p>
+
+                        </div>
+                        <div class="slide-content">
+                            <p>完成線上線用卡付款後，請點擊網頁右上方<img src="../Content/img/member.svg" alt="" width="15px">的 【訂單查詢】，於訂單明細中，訂單狀態會出現【付款成功】。
+
+                            </p>
+                        </div>
+                    </div>
 
                 </div>
+                <!-- 問題分類 -->
+                <div class="paragraph">
 
+                    <h3>關於會員</h3>
+                    <div class="slide-block">
+                        <div class="slide-title">
+                            <p>日日購接受什麼付款方式</p>
 
+                        </div>
+                        <div class="slide-content">
+                            <p>我們目前接受信用卡付款。 方便又好用的付款方式，當您進行線上刷卡方式進行交易時，作業流程透過SSL 加密機制，保障您的個人隱私資料。 ＊提醒您，請務必確認付款成功，以免您心愛的商品售完，無法訂購。
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide-block">
+                        <div class="slide-title">
+                            <p>日日購接受什麼付款方式</p>
+
+                        </div>
+                        <div class="slide-content">
+                            <p>我們目前接受信用卡付款。 方便又好用的付款方式，當您進行線上刷卡方式進行交易時，作業流程透過SSL 加密機制，保障您的個人隱私資料。 ＊提醒您，請務必確認付款成功，以免您心愛的商品售完，無法訂購。
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
     </div>
@@ -214,8 +254,16 @@
         </div>
 
     </footer>
+    <script>
+        $(function() {
+            $('.slide-title').click(function() {
+                $(this).next('.slide-content').slideToggle();
+                $(this).toggleClass('slide-active');
 
-    <script src="../Content/js/all.js"></script>
+            })
+        })
+    </script>
+
 
 </body>
 

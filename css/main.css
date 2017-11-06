@@ -964,26 +964,48 @@ input[type="radio"]:checked:before {
 .words .paragraph {
   margin-bottom: 80px;
 }
+/* line 14, ../sass/_words.scss */
+.words .paragraph > h3 {
+  margin-bottom: 40px;
+}
 
-/* line 18, ../sass/_words.scss */
+/* line 22, ../sass/_words.scss */
 .slide-block h3 {
   margin-bottom: 30px;
 }
-/* line 21, ../sass/_words.scss */
+/* line 25, ../sass/_words.scss */
 .slide-block .slide-title {
   padding: 20px 0;
-  border-top: 2px solid #CFCFCF;
-  border-bottom: 2px solid #CFCFCF;
-  margin: 10px 0;
+  border-top: 1px solid #CFCFCF;
+  border-bottom: 1px solid #CFCFCF;
+  position: relative;
 }
-/* line 26, ../sass/_words.scss */
+/* line 30, ../sass/_words.scss */
 .slide-block .slide-title p {
   padding: 0 15px;
   margin-bottom: 0;
 }
-/* line 32, ../sass/_words.scss */
+/* line 34, ../sass/_words.scss */
+.slide-block .slide-title:before {
+  content: '+';
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 30px;
+  color: #505050;
+}
+/* line 43, ../sass/_words.scss */
+.slide-block .slide-title.slide-active:before {
+  content: '-';
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 30px;
+  color: #505050;
+}
+/* line 54, ../sass/_words.scss */
 .slide-block .slide-content p {
-  padding: 0 15px;
+  padding: 15px;
 }
 
 /* line 9, ../sass/main.scss */
