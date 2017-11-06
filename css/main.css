@@ -624,6 +624,13 @@ label.error {
   display: none;
 }
 
+@media screen and (min-width: 769px) {
+  /* line 192, ../sass/_member.scss */
+  .member-form-edit h2 {
+    margin: 60px 0px;
+  }
+}
+
 @media screen and (max-width: 768px) and (min-width: 300px) {
   /* line 3, ../sass/_shipping.scss */
   .container.container-form {
