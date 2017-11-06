@@ -1008,6 +1008,49 @@ input[type="radio"]:checked:before {
   padding: 15px;
 }
 
+/* line 60, ../sass/_words.scss */
+.join {
+  background: 50% 0 url("../Content/img/join_bg.png") no-repeat;
+  background-color: #E6E6E6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+@media screen and (min-width: 769px) {
+  /* line 60, ../sass/_words.scss */
+  .join {
+    margin-top: -20px;
+  }
+}
+/* line 71, ../sass/_words.scss */
+.join .join-content {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+/* line 75, ../sass/_words.scss */
+.join .join-content h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+/* line 80, ../sass/_words.scss */
+.join .join-content .content-block {
+  margin: 30px 0 60px;
+}
+/* line 82, ../sass/_words.scss */
+.join .join-content .content-block span {
+  color: #CECECE;
+  font-size: 0.8rem;
+}
+/* line 87, ../sass/_words.scss */
+.join .join-content .btn {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 /* line 9, ../sass/main.scss */
 * {
   margin: 0;
