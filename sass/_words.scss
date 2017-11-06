@@ -68,10 +68,18 @@
     @include range-width(769px) {
         margin-top: -20px;
     }
+    @include range-width(300px,
+    768px) {
+        background-size: cover;
+    }
     .join-content {
         background-color: #fff;
         padding: 40px 20px;
         text-align: center;
+        @include range-width(300px,
+        768px) {
+            background-color: rgba(#fff, .7);
+        }
         h2 {
             font-size: 2rem;
             font-weight: 400;
@@ -82,6 +90,10 @@
             span {
                 color: #CECECE;
                 font-size: 0.8rem;
+                @include range-width(300px,
+                768px) {
+                    color: $main-color;
+                }
             }
         }
         .btn {

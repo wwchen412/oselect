@@ -1024,28 +1024,46 @@ input[type="radio"]:checked:before {
     margin-top: -20px;
   }
 }
-/* line 71, ../sass/_words.scss */
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  /* line 60, ../sass/_words.scss */
+  .join {
+    background-size: cover;
+  }
+}
+/* line 75, ../sass/_words.scss */
 .join .join-content {
   background-color: #fff;
   padding: 40px 20px;
   text-align: center;
 }
-/* line 75, ../sass/_words.scss */
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  /* line 75, ../sass/_words.scss */
+  .join .join-content {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+/* line 83, ../sass/_words.scss */
 .join .join-content h2 {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 30px;
 }
-/* line 80, ../sass/_words.scss */
+/* line 88, ../sass/_words.scss */
 .join .join-content .content-block {
   margin: 30px 0 60px;
 }
-/* line 82, ../sass/_words.scss */
+/* line 90, ../sass/_words.scss */
 .join .join-content .content-block span {
   color: #CECECE;
   font-size: 0.8rem;
 }
-/* line 87, ../sass/_words.scss */
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  /* line 90, ../sass/_words.scss */
+  .join .join-content .content-block span {
+    color: #323232;
+  }
+}
+/* line 99, ../sass/_words.scss */
 .join .join-content .btn {
   max-width: 400px;
   margin: 0 auto;
