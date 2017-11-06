@@ -58,47 +58,56 @@
 }
 
 .join {
-    background: 50% 0 url('../Content/img/join_bg.png') no-repeat;
-    background-color: #E6E6E6;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0;
-    @include range-width(769px) {
-        margin-top: -20px;
-    }
-    @include range-width(300px,
-    768px) {
-        background-size: cover;
-    }
     .join-content {
-        background-color: #fff;
-        padding: 40px 20px;
+        // background-color: #fff;
+        // padding: 40px 20px;
         text-align: center;
-        @include range-width(300px,
-        768px) {
-            background-color: rgba(#fff, .7);
-        }
-        h2 {
-            font-size: 2rem;
-            font-weight: 400;
-            margin-bottom: 30px;
+        @include range-width(300px, 768px) {
+            padding: 40px 31px;
+            text-align: left;
         }
         .content-block {
             margin: 30px 0 60px;
             span {
                 color: #CECECE;
                 font-size: 0.8rem;
-                @include range-width(300px,
-                768px) {
-                    color: $main-color;
-                }
+            }
+            .btn {
+                max-width: 400px;
+                margin: 0 auto;
+                text-align: center;
             }
         }
-        .btn {
-            max-width: 400px;
-            margin: 0 auto;
-        }
+    }
+}
+
+.banner-img {
+    position: relative;
+    .arrow-down {
+        width: 80px;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    @include range-width(769px) {
+        margin-top: -20px;
+    }
+    @include range-width(300px, 768px) {
+        height: calc(100vh - 60px);
+    }
+    h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        font-size: 3rem;
+    }
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
 }

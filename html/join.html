@@ -102,11 +102,16 @@
     </header>
     <!-- 內容 -->
     <div id="wrap">
+        <div class="banner-img">
+            <img src="../Content/img/join_bg.png" alt="" class="rwd-img" style="width:100%">
+            <h2 style="color:#fff">入會方案</h2>
+            <div class="arrow-down"><img src="../Content/img/arrow-down.svg" class="rwd-img hidden-sm"></div>
+        </div>
         <div class="join">
             <div class=" container-mini ">
                 <div class="join-content ">
                     <div class="content-block ">
-                        <h2>入會方案</h2>
+
                         <p>日日購是會員制購物平台，保證商品品質皆為正品，我們提供日日購會員知名品牌商品最低價格、總代理保固等服務。在日日購擁有多樣化商品挑選，一次滿足會員生活所需。</p>
                     </div>
 
@@ -241,7 +246,17 @@
 
     <script src="../Content/js/all.js ">
     </script>
+    <script>
+        $(function() {
+            $('.arrow-down').click(function() {
+                var shop_item_top = $('.shop-items').offset().top;
 
+                $('html, body').animate({
+                    scrollTop: shop_item_top
+                }, 1000)
+            })
+        })
+    </script>
 </body>
 
 </html>
