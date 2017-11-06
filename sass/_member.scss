@@ -142,12 +142,25 @@
              width: 12.5%;
              @include range-width(300px, 769px) {
                  width: 20%;
+                 padding: 0 5px;
              }
              &:last-child {
                  margin-left: auto;
              }
              img {
                  width: 100%;
+             }
+         }
+         &.hidden-sm {
+             box-shadow: 0 3px 2px -2px rgba(51, 51, 51, .2);
+             .content-list {
+                 @include range-width(300px, 769px) {
+                     width: 33%;
+                     text-align: center;
+                 }
+                 &:last-child {
+                     margin-left: 0;
+                 }
              }
          }
      }
@@ -162,6 +175,7 @@
              @include range-width(300px, 769px) {
                  width: 25%;
                  text-align: right;
+                 padding: 0 20px;
              }
          }
      }
