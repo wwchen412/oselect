@@ -647,6 +647,21 @@ label.error {
     margin: 60px 0px;
   }
 }
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  /* line 211, ../sass/_member.scss */
+  .member-form-edit h2 {
+    margin-bottom: 20px;
+  }
+  /* line 214, ../sass/_member.scss */
+  .member-form-edit hr {
+    transform: translateX(-46px);
+    width: calc(100% + 46px * 2);
+  }
+  /* line 218, ../sass/_member.scss */
+  .member-form-edit #member-form {
+    padding-top: 30px;
+  }
+}
 
 @media screen and (max-width: 768px) and (min-width: 300px) {
   /* line 3, ../sass/_shipping.scss */
