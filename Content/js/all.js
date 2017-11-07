@@ -124,3 +124,4 @@ $('.menu-bar').click(function() {
     })
 
 })
+$('footer').load('_footer.html');
