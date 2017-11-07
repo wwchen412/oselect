@@ -105,7 +105,7 @@
         <div class="banner-img">
             <img src="../Content/img/join_bg.png" alt="" class="rwd-img" style="width:100%">
             <h2 style="color:#fff">入會方案</h2>
-            <div class="arrow-down"><img src="../Content/img/arrow-down.svg" class="rwd-img hidden-sm"></div>
+            <div class="arrow-down"><img src="../Content/img/arrow-down-white.svg" class="rwd-img hidden-sm"></div>
         </div>
         <div class="join">
             <div class=" container-mini ">
@@ -249,10 +249,10 @@
     <script>
         $(function() {
             $('.arrow-down').click(function() {
-                var shop_item_top = $('.shop-items').offset().top;
+                var sjoin_top = $('.join').offset().top;
 
                 $('html, body').animate({
-                    scrollTop: shop_item_top
+                    scrollTop: sjoin_top - 30
                 }, 1000)
             })
         })
