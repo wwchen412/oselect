@@ -218,6 +218,11 @@ section {
             background-color: #e9a961;
         }
     }
+    .num {
+        @include range-width(300px, 768px) {
+            margin-top: -85px;
+        }
+    }
 }
 
 .border-bottom {
