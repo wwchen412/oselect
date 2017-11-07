@@ -73,6 +73,9 @@
                 color: #CECECE;
                 font-size: 0.8rem;
             }
+            h2 {
+                margin-bottom: 40px;
+            }
             .btn {
                 max-width: 400px;
                 margin: 0 auto;
@@ -106,6 +109,9 @@
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
         font-size: 3rem;
+        @include range-width(300px, 768px) {
+            font-size: 2rem;
+        }
     }
     img {
         object-fit: cover;
