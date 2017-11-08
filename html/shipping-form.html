@@ -15,8 +15,7 @@
     <script src="../Content/js/swiper.min.js "></script>
     <script src="../Content/js/plugin.js">
     </script>
-    <script src="../Content/js/all.js ">
-    </script>
+
 
 </head>
 
@@ -30,15 +29,18 @@
                 </a>
             </div>
             <nav>
-                <ul>
-                    <li>
+                <ul id="mainNav">
+                    <li class="current_page_item">
                         <a href="shop.html">電子周邊</a>
+
                     </li>
                     <li>
                         <a href="shop.html">生活家電</a>
+
                     </li>
                     <li>
                         <a href="shop.html">居家用品</a>
+
                     </li>
                 </ul>
             </nav>
@@ -135,7 +137,7 @@
                             </div>
                             <h2 class="">填寫訂購資料</h2>
                             <hr class="box-shadow">
-                            <div class="shipping-list">
+                            <div class="shipping-list shipping-list-form">
 
 
                                 <div class="o-select-6">
@@ -144,7 +146,7 @@
                                         <input type="text" placeholder="姓名" class="required" name="pay_name">
                                     </div>
                                     <div class="form-group o-select-6">
-                                        <p>&nbsp;</p>
+                                        <p class="hidden-xs">&nbsp;</p>
                                         <label for="mr">
                                             <input type="radio" id="mr" name="gender" class="required">
                                             先生
@@ -210,7 +212,7 @@
 
 
                             </div>
-                            <div class="shipping-list">
+                            <div class="shipping-list shipping-list-form">
                                 <div class="o-select-6">
                                     <p><b>發票資訊</b></p>
                                     <div class="form-group">
@@ -369,7 +371,8 @@
         </div>
 
     </footer>
-
+    <script src="../Content/js/all.js ">
+    </script>
     <script>
         new TwCitySelector({
             el: ".my-selector-a", // 同 DOM querySelector()

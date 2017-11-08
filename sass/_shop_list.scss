@@ -87,15 +87,15 @@
                 top: 16px;
                 left: 0;
                 font-size: .8rem;
-                width: 80px;
-                height: 80px;
+                width: 70px;
+                height: 70px;
                 line-height: 20px;
                 text-align: center;
                 @include range-width(300px, 769px) {
                     left: 16px;
                 }
                 h4 {
-                    margin-top: 5px;
+                    margin-top: 0px;
                 }
             }
             &.new-arrived {
@@ -142,12 +142,8 @@
 section {
     &.info {
         padding: 20px 0;
-        .container {
-            .item-info-content {
-                .content-p {
-                    padding: 15px 0;
-                }
-            }
+        .content-p {
+            padding: 8px 0;
         }
     }
 }

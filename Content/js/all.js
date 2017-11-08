@@ -98,6 +98,8 @@ $('.menu-bar').click(function() {
     var phone_nav = $('.nav-phone');
     var body = $('body');
     if (phone_nav.hasClass('d-none')) {
+
+        phone_nav.fadeIn('slow');
         phone_nav.removeClass('d-none');
         $('.nav-phone-wrap').addClass('slide-right');
         body.addClass('active');

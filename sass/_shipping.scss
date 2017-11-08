@@ -93,9 +93,6 @@
     display: flex;
     border-bottom: 1px solid $border-color;
     padding: 20px 0;
-    @include range-width(300px, 769px) {
-        flex-direction: column;
-    }
     &:last-child {
         border: 0;
     }
@@ -138,6 +135,20 @@
             }
             h5 {
                 text-align: right;
+            }
+        }
+    }
+    &.shipping-list-form {
+        @include range-width(300px, 769px) {
+            flex-direction: column;
+        }
+        .o-select-6 {
+            width: 100%;
+        }
+        .shipping-img,
+        .shipping-content {
+            @include range-width(300px, 769px) {
+                width: 100%;
             }
         }
     }
