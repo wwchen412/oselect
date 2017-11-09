@@ -58,7 +58,7 @@
  .info-contents {
      padding: 40px 0;
      @include range-width(300px, 769px) {
-         padding: 26px 0;
+         padding-top: 26px !important;
      }
      p {
          margin-bottom: 1rem;

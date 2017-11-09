@@ -142,9 +142,9 @@
         @include range-width(300px, 769px) {
             flex-direction: column;
         }
-        .o-select-6 {
-            width: 100%;
-        }
+        // .o-select-6 {
+        //     width: 100%;
+        // }
         .shipping-img,
         .shipping-content {
             @include range-width(300px, 769px) {
