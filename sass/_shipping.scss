@@ -24,6 +24,7 @@
             &.hr-15 {
                 width: calc(100% + 15px * 2);
                 transform: translate(-15px);
+                z-index: 1;
             }
         }
     }
