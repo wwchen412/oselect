@@ -20,6 +20,10 @@
         hr {
             width: calc(100% + 46px * 2);
             transform: translate(-46px);
+            &.hr-15 {
+                width: calc(100% + 15px * 2);
+                transform: translate(-15px);
+            }
         }
     }
 }
