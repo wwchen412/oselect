@@ -417,6 +417,9 @@
             $('.slideUP').click(function() {
                 $(this).parents('.form-content-items').stop().slideUp();
                 $('.arrow.trans-arrow').removeClass('trans-arrow');
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 300);
             })
         })
     </script>
