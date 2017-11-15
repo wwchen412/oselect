@@ -32,6 +32,9 @@
      }
      p {
          font-size: 0.9rem;
+         @include range-width(300px, 769px) {
+             margin-top: 40px;
+         }
      }
      .o-select-6 {
          margin-right: 150px;
