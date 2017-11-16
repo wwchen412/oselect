@@ -255,6 +255,13 @@
                     scrollTop: sjoin_top - 30
                 }, 1000)
             })
+            $(window).scroll(function() {
+                var window_scroll = $(window).scrollTop();
+                var join_top = $('.join').offset().top;
+                var opacity = ((join_top - window_scroll) / (join_top + window_scroll));
+
+                $('.banner-img').css('opacity', opacity);
+            })
         })
     </script>
 </body>

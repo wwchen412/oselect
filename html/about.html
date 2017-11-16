@@ -233,9 +233,9 @@
             $(window).scroll(function() {
                 var window_scroll = $(window).scrollTop();
                 var join_top = $('.join').offset().top;
-                var a = (join_top - window_scroll) / 100 * 0.1;
-                console.log(a);
-                $('.banner-img').css('opacity', a);
+                var opacity = ((join_top - window_scroll) / (join_top + window_scroll));
+
+                $('.banner-img').css('opacity', opacity);
             })
 
         })
