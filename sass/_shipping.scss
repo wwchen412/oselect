@@ -81,10 +81,12 @@
             span {
                 display: inline-block;
                 min-width: 40px;
-                text-align: justify;
+                text-align: right;
+                margin-left: 40px;
                 &:nth-child(2) {
                     min-width: 80px;
                     text-align: right;
+                    margin: 0;
                 }
             }
             &:last-child {

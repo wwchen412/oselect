@@ -94,6 +94,9 @@
             margin: 100px 0;
             @include range-width(300px, 768px) {
                 margin: 46px 0;
+                p {
+                    text-align: justify;
+                }
             }
             span {
                 color: #CECECE;
@@ -101,6 +104,9 @@
             }
             h2 {
                 margin-bottom: 40px;
+            }
+            b {
+                margin-right: 5px;
             }
             .btn {
                 max-width: 400px;
