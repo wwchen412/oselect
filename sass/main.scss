@@ -211,6 +211,9 @@ body.active {
 header {
     border-bottom: 2px solid $border-color;
     margin-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
     @include range-width(300px, 768px) {
         margin-bottom: 0;
         &.inner-page {
