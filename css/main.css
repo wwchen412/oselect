@@ -137,7 +137,13 @@ footer .container .footer-btn ul + p {
     padding: 0 15px;
   }
 }
-/* line 56, ../sass/_shop_list.scss */
+@media screen and (max-width: 768px) and (min-width: 300px) {
+  /* line 56, ../sass/_shop_list.scss */
+  .shop-items ul li h3 {
+    padding: 0 15px;
+  }
+}
+/* line 61, ../sass/_shop_list.scss */
 .shop-items ul li .buy {
   margin-top: 30px;
   display: flex;
@@ -146,21 +152,27 @@ footer .container .footer-btn ul + p {
   margin-bottom: 4rem;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 56, ../sass/_shop_list.scss */
+  /* line 61, ../sass/_shop_list.scss */
   .shop-items ul li .buy {
     margin-bottom: 15px;
     padding: 0 15px;
   }
 }
-/* line 66, ../sass/_shop_list.scss */
+/* line 71, ../sass/_shop_list.scss */
 .shop-items ul li .buy > div {
   display: inline-block;
 }
-/* line 69, ../sass/_shop_list.scss */
+/* line 74, ../sass/_shop_list.scss */
 .shop-items ul li .buy .price {
   margin-right: auto;
 }
-/* line 72, ../sass/_shop_list.scss */
+@media screen and (max-width: 768px) and (min-width: 300px) {
+  /* line 76, ../sass/_shop_list.scss */
+  .shop-items ul li .buy .price h3 {
+    padding: 0;
+  }
+}
+/* line 82, ../sass/_shop_list.scss */
 .shop-items ul li .buy .cart {
   border: 1px solid #D1D1D1;
   width: 50px;
@@ -168,26 +180,26 @@ footer .container .footer-btn ul + p {
   text-align: center;
   line-height: 50;
 }
-/* line 78, ../sass/_shop_list.scss */
+/* line 88, ../sass/_shop_list.scss */
 .shop-items ul li .buy .cart a {
   display: inline-block;
   padding: 10px;
   width: 100%;
   height: 100%;
 }
-/* line 83, ../sass/_shop_list.scss */
+/* line 93, ../sass/_shop_list.scss */
 .shop-items ul li .buy .cart a:active {
   background-color: #4B4B4B;
 }
-/* line 85, ../sass/_shop_list.scss */
+/* line 95, ../sass/_shop_list.scss */
 .shop-items ul li .buy .cart a:active img {
   filter: invert(1);
 }
-/* line 90, ../sass/_shop_list.scss */
+/* line 100, ../sass/_shop_list.scss */
 .shop-items ul li .buy .cart img {
   width: 20px;
 }
-/* line 95, ../sass/_shop_list.scss */
+/* line 105, ../sass/_shop_list.scss */
 .shop-items ul li .item-label {
   padding: 15px;
   position: absolute;
@@ -200,37 +212,37 @@ footer .container .footer-btn ul + p {
   text-align: center;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 95, ../sass/_shop_list.scss */
+  /* line 105, ../sass/_shop_list.scss */
   .shop-items ul li .item-label {
     left: 16px;
   }
 }
-/* line 108, ../sass/_shop_list.scss */
+/* line 118, ../sass/_shop_list.scss */
 .shop-items ul li .item-label h4 {
   margin-top: 0px;
 }
-/* line 113, ../sass/_shop_list.scss */
+/* line 123, ../sass/_shop_list.scss */
 .shop-items ul li.new-arrived .item-label {
   background-color: #ACDDD7;
 }
-/* line 118, ../sass/_shop_list.scss */
+/* line 128, ../sass/_shop_list.scss */
 .shop-items ul li.discount-item .item-label {
   background-color: #e9a961;
   text-align: center;
 }
-/* line 124, ../sass/_shop_list.scss */
+/* line 134, ../sass/_shop_list.scss */
 .shop-items ul li.sold-out-item .item-label {
   background-color: #D1D1D1;
   text-align: center;
   color: #fff;
 }
 
-/* line 134, ../sass/_shop_list.scss */
+/* line 144, ../sass/_shop_list.scss */
 .shop-img {
   margin: 20px 0;
 }
 
-/* line 139, ../sass/_shop_list.scss */
+/* line 149, ../sass/_shop_list.scss */
 .sold-num h4 {
   background: #323232;
   color: #fff;
@@ -240,70 +252,71 @@ footer .container .footer-btn ul + p {
   font-weight: normal;
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 139, ../sass/_shop_list.scss */
+  /* line 149, ../sass/_shop_list.scss */
   .sold-num h4 {
     background: #864243;
+    padding: 5px 15px;
   }
 }
 
-/* line 154, ../sass/_shop_list.scss */
+/* line 165, ../sass/_shop_list.scss */
 section.info {
   padding: 20px 0;
 }
-/* line 156, ../sass/_shop_list.scss */
+/* line 167, ../sass/_shop_list.scss */
 section.info .content-p {
   padding: 8px 0;
 }
 
-/* line 162, ../sass/_shop_list.scss */
+/* line 173, ../sass/_shop_list.scss */
 .itemChoose {
   border-top: 1px solid #D1D1D1;
   padding: 20px 0;
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 162, ../sass/_shop_list.scss */
+  /* line 173, ../sass/_shop_list.scss */
   .itemChoose {
     border-top: 0px solid transparent;
   }
 }
-/* line 168, ../sass/_shop_list.scss */
+/* line 179, ../sass/_shop_list.scss */
 .itemChoose .items {
   font-size: 0;
 }
-/* line 171, ../sass/_shop_list.scss */
+/* line 182, ../sass/_shop_list.scss */
 .itemChoose .items > div {
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 171, ../sass/_shop_list.scss */
+  /* line 182, ../sass/_shop_list.scss */
   .itemChoose .items > div {
     padding-bottom: 15px;
   }
-  /* line 176, ../sass/_shop_list.scss */
+  /* line 187, ../sass/_shop_list.scss */
   .itemChoose .items > div hr {
     margin: 15px -15px 0;
   }
-  /* line 180, ../sass/_shop_list.scss */
+  /* line 191, ../sass/_shop_list.scss */
   .itemChoose .items > div:last-child hr {
     display: none;
   }
 }
-/* line 185, ../sass/_shop_list.scss */
+/* line 196, ../sass/_shop_list.scss */
 .itemChoose .items > div > h4 {
   margin-top: 36px;
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 185, ../sass/_shop_list.scss */
+  /* line 196, ../sass/_shop_list.scss */
   .itemChoose .items > div > h4 {
     margin-top: 10px;
   }
 }
-/* line 191, ../sass/_shop_list.scss */
+/* line 202, ../sass/_shop_list.scss */
 .itemChoose .items > div .price {
   padding: 30px 0 15px;
 }
-/* line 193, ../sass/_shop_list.scss */
+/* line 204, ../sass/_shop_list.scss */
 .itemChoose .items > div .price h5 {
   text-decoration: line-through;
   color: #864242;
@@ -311,18 +324,18 @@ section.info .content-p {
 }
 
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 202, ../sass/_shop_list.scss */
+  /* line 213, ../sass/_shop_list.scss */
   .item-info-content.o-select-6 {
     margin: 0px -15px !important;
     width: calc(100% + 30px);
   }
-  /* line 206, ../sass/_shop_list.scss */
+  /* line 217, ../sass/_shop_list.scss */
   .item-info-content.o-select-6 .content-p {
-    padding: 0 15px;
+    padding: 20px 15px;
   }
 }
 
-/* line 212, ../sass/_shop_list.scss */
+/* line 223, ../sass/_shop_list.scss */
 .itemChoose-h2 {
   font-size: 2rem;
   font-weight: 400;
@@ -330,14 +343,14 @@ section.info .content-p {
   box-shadow: 0 3px 2px -2px rgba(51, 51, 51, 0.2);
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 212, ../sass/_shop_list.scss */
+  /* line 223, ../sass/_shop_list.scss */
   .itemChoose-h2 {
     border-bottom: 0;
     box-shadow: 0 0 0 transparent;
   }
 }
 
-/* line 224, ../sass/_shop_list.scss */
+/* line 235, ../sass/_shop_list.scss */
 .recommend h3 {
   text-align: center;
   padding: 15px 0;
@@ -345,46 +358,46 @@ section.info .content-p {
   box-shadow: inset 0 3px 2px -2px rgba(51, 51, 51, 0.2);
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 224, ../sass/_shop_list.scss */
+  /* line 235, ../sass/_shop_list.scss */
   .recommend h3 {
     margin: 0 -15px;
   }
 }
 
-/* line 237, ../sass/_shop_list.scss */
+/* line 248, ../sass/_shop_list.scss */
 .relative-items > div hr {
   margin: 15px -15px 0;
 }
-/* line 241, ../sass/_shop_list.scss */
+/* line 252, ../sass/_shop_list.scss */
 .relative-items > div:last-child hr {
   display: none;
 }
 
-/* line 248, ../sass/_shop_list.scss */
+/* line 259, ../sass/_shop_list.scss */
 .through-price {
   text-decoration: line-through;
   color: #864242;
   font-size: 1rem;
 }
 
-/* line 254, ../sass/_shop_list.scss */
+/* line 265, ../sass/_shop_list.scss */
 .sold-out-num {
   background: #864242;
   color: #fff;
   padding: 5px;
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 254, ../sass/_shop_list.scss */
+  /* line 265, ../sass/_shop_list.scss */
   .sold-out-num {
     margin: 0 -15px;
   }
 }
 
-/* line 264, ../sass/_shop_list.scss */
+/* line 275, ../sass/_shop_list.scss */
 .item .item-border-out {
   position: relative;
 }
-/* line 268, ../sass/_shop_list.scss */
+/* line 279, ../sass/_shop_list.scss */
 .item .item-label {
   padding: 10px;
   position: absolute;
@@ -396,28 +409,28 @@ section.info .content-p {
   line-height: 20px;
   z-index: 2;
 }
-/* line 278, ../sass/_shop_list.scss */
+/* line 289, ../sass/_shop_list.scss */
 .item .item-label h4 {
   margin-top: 5px;
 }
-/* line 281, ../sass/_shop_list.scss */
+/* line 292, ../sass/_shop_list.scss */
 .item .item-label.discount {
   text-align: center;
   background-color: #e9a961;
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 286, ../sass/_shop_list.scss */
+  /* line 297, ../sass/_shop_list.scss */
   .item .num {
     margin-top: -85px;
   }
 }
 
-/* line 293, ../sass/_shop_list.scss */
+/* line 304, ../sass/_shop_list.scss */
 .border-bottom {
   display: none;
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 293, ../sass/_shop_list.scss */
+  /* line 304, ../sass/_shop_list.scss */
   .border-bottom {
     display: block;
     margin: 0 -15px;
@@ -460,7 +473,7 @@ section.info .content-p {
   max-width: 194px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 44px;
   background: #323232;
   padding-bottom: 13px;
 }
@@ -1037,10 +1050,10 @@ label.error {
 }
 /* line 201, ../sass/_shipping.scss */
 .status ol li .dot {
-  line-height: 35px;
+  line-height: 34px;
   text-align: center;
-  width: 35px;
-  height: 35px;
+  width: 34px;
+  height: 34px;
   color: #fff;
   background-color: #D1D1D1;
   font-size: 20px;
@@ -1350,7 +1363,7 @@ p {
 /* line 35, ../sass/main.scss */
 h2 {
   font-size: 1.4rem;
-  line-height: 200%;
+  line-height: 150%;
   font-weight: normal;
 }
 
@@ -1682,7 +1695,7 @@ header .container .right-top-btn .member ul li h4 + span {
 }
 /* line 301, ../sass/main.scss */
 header .container .right-top-btn .member ul li h4 + span img {
-  width: 25px;
+  width: 16px;
   transform: translateY(25%);
   cursor: pointer;
 }
