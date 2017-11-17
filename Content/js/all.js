@@ -43,11 +43,14 @@
 $('header .member').click(function() {
 
         var member_menu = $(this).find('ul');
+        var wrap = $('#wrap');
         if (member_menu.hasClass('d-none')) {
             member_menu.fadeIn(500);
             member_menu.removeClass('d-none');
+            wrap.addClass('active');
         } else {
             member_menu.addClass('d-none');
+            wrap.removeClass('active');
         }
         member_menu.click(function() {
             event.stopPropagation();
@@ -97,6 +100,7 @@ $("#mainNav li").hover(function() {
 $('.menu-bar').click(function() {
     var phone_nav = $('.nav-phone');
     var body = $('body');
+    var wrap = $('#wrap');
     if (phone_nav.hasClass('d-none')) {
 
         phone_nav.fadeIn('slow');
@@ -104,11 +108,13 @@ $('.menu-bar').click(function() {
         $('.nav-phone-wrap').addClass('slide-right');
         body.addClass('active');
         $('.logo a').css('z-index', 0);
+        wrap.addClass('active');
     }
     phone_nav.find('span.close').click(function() {
         event.stopPropagation();
         $(this).parents('.nav-phone').addClass('d-none');
         body.removeClass('active');
+        wrap.removeClass('active');
         $('.logo a').css('z-index', 3);
         $('.nav-phone-wrap').removeClass('slide-right');
     })
@@ -117,6 +123,7 @@ $('.menu-bar').click(function() {
         if (!$(this).hasClass('d-none')) {
             $(this).addClass('d-none');
             body.removeClass('active');
+            wrap.removeClass('active');
             $('.logo a').css('z-index', 3);
             $('.nav-phone-wrap').removeClass('slide-right');
         }

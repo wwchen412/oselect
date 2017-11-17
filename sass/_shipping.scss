@@ -199,26 +199,18 @@
                 }
             }
             .dot {
-                line-height: 50px;
+                $w: 35px;
+                line-height: $w;
                 text-align: center;
-                width: 50px;
-                height: 50px;
+                width: $w;
+                height: $w;
                 color: #fff;
                 background-color: $border-color;
                 font-size: 20px;
                 border-radius: 50%;
                 position: relative;
                 font-weight: bold;
-                // &:after {
-                //     content: '';
-                //     display: block;
-                //     position: absolute;
-                //     right: calc(-50% - 5px);
-                //     top: 50%;
-                //     width: 50%;
-                //     height: 2px;
-                //     background: $border-color;
-                // }
+                margin: 0 auto;
             }
             &:last-child {
                 margin: 0;

@@ -211,9 +211,11 @@ body.active {
 header {
     border-bottom: 2px solid $border-color;
     margin-bottom: 20px;
-    background-color: #fff;
     position: relative;
     z-index: 1;
+    &.inner-page {
+        background-color: #fff;
+    }
     @include range-width(300px, 768px) {
         margin-bottom: 0;
         &.inner-page {
@@ -382,7 +384,7 @@ header {
                         background: rgba(0, 0, 0, .6);
                         top: 0;
                         left: 0;
-                        z-index: 100;
+                        z-index: 999;
                         padding: 20px;
                         .nav-phone-wrap {
                             transition: 2s;
@@ -490,7 +492,7 @@ section {
     z-index: 0;
     @include range-width(300px, 767px) {
         margin: 0;
-        margin-top: -60px;
+        margin-top: -50px;
         .arrow-down {
             width: 80px;
             margin: 0 auto;
@@ -605,5 +607,9 @@ section {
     min-height: calc(100vh - 126px);
     @include range-width(300px, 768px) {
         min-height: calc(100vh - 50px);
+    }
+    &.active {
+        position: relative;
+        z-index: -1;
     }
 }
