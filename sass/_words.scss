@@ -34,6 +34,7 @@
             }
             .slide-block:last-child {
                 .slide-title.slide-active {
+                    border-bottom: 1px solid #CFCFCF;
                     box-shadow: inset 0 3px 2px -2px rgba(51, 51, 51, 0.2), 0 3px 2px -2px rgba(51, 51, 51, 0.2);
                 }
             }
@@ -60,16 +61,17 @@
         &:before {
             content: '－';
             position: absolute;
-            top: 17px;
+            top: 13px;
             right: 20px;
             font-size: 30px;
             color: #505050;
         }
         &.slide-active {
+            border-bottom: 0;
             &:before {
                 content: '＋';
                 position: absolute;
-                top: 17px;
+                top: 13px;
                 right: 20px;
                 font-size: 30px;
                 color: #505050;

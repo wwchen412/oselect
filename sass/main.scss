@@ -211,13 +211,17 @@ body.active {
 header {
     border-bottom: 2px solid $border-color;
     margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
     &.inner-page {
         background-color: #fff;
     }
     @include range-width(300px, 768px) {
         margin-bottom: 0;
+        background: transparent;
         &.inner-page {
             background: $main-color;
         }
@@ -566,6 +570,10 @@ section {
     pointer-events: none;
 }
 
+.num {
+    font-size: 0;
+}
+
 .input-number,
 .input-number-decrement,
 .input-number-increment {
@@ -573,6 +581,8 @@ section {
     height: 40px;
     user-select: none;
     font-size: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .input-number-decrement,
@@ -605,8 +615,10 @@ section {
 
 #wrap {
     min-height: calc(100vh - 126px);
+    margin-top: 126px;
     @include range-width(300px, 768px) {
         min-height: calc(100vh - 50px);
+        margin-top: 50px;
     }
     &.active {
         position: relative;
