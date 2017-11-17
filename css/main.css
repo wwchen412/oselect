@@ -457,12 +457,12 @@ section.info .content-p {
 }
 /* line 24, ../sass/_login.scss */
 .login-bg .login-from .form-logo {
-  max-width: 250px;
+  max-width: 194px;
   margin: 0 auto;
   text-align: center;
   padding-top: 60px;
   background: #323232;
-  padding-bottom: 1rem;
+  padding-bottom: 13px;
 }
 /* line 32, ../sass/_login.scss */
 .login-bg .login-from input {
