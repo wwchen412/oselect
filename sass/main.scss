@@ -627,7 +627,7 @@ section {
     margin-top: 126px;
     @include range-width(300px, 768px) {
         min-height: calc(100vh - 50px);
-        margin-top: 50px;
+        margin-top: 70px;
     }
     &.active {
         position: relative;
