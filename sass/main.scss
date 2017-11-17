@@ -623,6 +623,11 @@ section {
 }
 
 #wrap {
+    &.index {
+        @include range-width(300px, 768px) {
+            margin-top: 50px;
+        }
+    }
     min-height: calc(100vh - 126px);
     margin-top: 126px;
     @include range-width(300px, 768px) {
