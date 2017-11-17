@@ -574,7 +574,6 @@ section {
     font-size: 0;
 }
 
-.input-number,
 .input-number-decrement,
 .input-number-increment {
     border: 1px solid #ccc;
@@ -583,6 +582,16 @@ section {
     font-size: 1rem;
     appearance: none;
     -webkit-appearance: none;
+}
+
+.input-number {
+    border: 1px solid #ccc;
+    height: 40px;
+    user-select: none;
+    font-size: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 .input-number-decrement,

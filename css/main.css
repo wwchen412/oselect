@@ -2017,7 +2017,6 @@ section {
 }
 
 /* line 577, ../sass/main.scss */
-.input-number,
 .input-number-decrement,
 .input-number-increment {
   border: 1px solid #ccc;
@@ -2028,7 +2027,18 @@ section {
   -webkit-appearance: none;
 }
 
-/* line 588, ../sass/main.scss */
+/* line 587, ../sass/main.scss */
+.input-number {
+  border: 1px solid #ccc;
+  height: 40px;
+  user-select: none;
+  font-size: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* line 597, ../sass/main.scss */
 .input-number-decrement,
 .input-number-increment {
   display: inline-block;
@@ -2041,39 +2051,39 @@ section {
   font-weight: bold;
   cursor: pointer;
 }
-/* line 599, ../sass/main.scss */
+/* line 608, ../sass/main.scss */
 .input-number-decrement:active,
 .input-number-increment:active {
   background: #f1f1f1;
 }
 
-/* line 604, ../sass/main.scss */
+/* line 613, ../sass/main.scss */
 .input-number-decrement {
   border-right: none;
   border-radius: 4px 0 0 4px;
   font-size: 1rem;
 }
 
-/* line 610, ../sass/main.scss */
+/* line 619, ../sass/main.scss */
 .input-number-increment {
   border-left: none;
   border-radius: 0 4px 4px 0;
   font-size: 1rem;
 }
 
-/* line 616, ../sass/main.scss */
+/* line 625, ../sass/main.scss */
 #wrap {
   min-height: calc(100vh - 126px);
   margin-top: 126px;
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 616, ../sass/main.scss */
+  /* line 625, ../sass/main.scss */
   #wrap {
     min-height: calc(100vh - 50px);
     margin-top: 50px;
   }
 }
-/* line 623, ../sass/main.scss */
+/* line 632, ../sass/main.scss */
 #wrap.active {
   position: relative;
   z-index: -1;
