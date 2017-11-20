@@ -130,16 +130,25 @@ $('.menu-bar').click(function() {
     })
 
 })
+$('.arrow-down').click(function() {
+    var shop_item_top = $('.shop-items').offset().top;
 
+    $('html, body').animate({
+        scrollTop: shop_item_top
+    }, 1000)
+})
+
+
+// 首頁header 手機版
 $(window).scroll(function() {
     var window_top = $(window).scrollTop();
     var window_width = $(window).width();
     var shop_itemsTop = $('.shop-items').offset().top;
     if (window_width < 768) {
         if (window_top > shop_itemsTop) {
-            $('header').css('background', '#323232');
+            $('header.index').css('background', '#323232');
         } else {
-            $('header').css('background', 'transparent');
+            $('header.index').css('background', 'transparent');
         }
     }
 

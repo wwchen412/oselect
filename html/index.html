@@ -12,7 +12,7 @@
 
 <body>
     <!-- 首頁header 與內頁不同 -->
-    <header>
+    <header class="index">
         <div class="container ">
             <div class="logo">
                 <a href="index.html">
@@ -286,13 +286,7 @@
 
     <script>
         $(function() {
-            $('.arrow-down').click(function() {
-                var shop_item_top = $('.shop-items').offset().top;
 
-                $('html, body').animate({
-                    scrollTop: shop_item_top
-                }, 1000)
-            })
         })
     </script>
 </body>
