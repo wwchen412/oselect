@@ -63,8 +63,6 @@ $('header .member').click(function() {
         })
     })
     // hover NAVBAR 底線
-
-
 var $el, leftPos, newWidth,
     $mainNav = $("#mainNav");
 
@@ -80,7 +78,6 @@ $magicLine
 $("#mainNav li").hover(function() {
     $el = $(this);
     leftPos = $el.position().left;
-    console.log(leftPos);
     newWidth = $el.width();
     $magicLine.stop().animate({
         left: leftPos,
@@ -133,4 +130,20 @@ $('.menu-bar').click(function() {
     })
 
 })
+
+$(window).scroll(function() {
+    var window_top = $(window).scrollTop();
+    var window_width = $(window).width();
+    var shop_itemsTop = $('.shop-items').offset().top;
+    if (window_width < 768) {
+        if (window_top > shop_itemsTop) {
+            $('header').css('background', '#323232');
+        } else {
+            $('header').css('background', 'transparent');
+        }
+    }
+
+})
+
+// 共用footer 之後需刪除
 $('footer').load('_footer.html');

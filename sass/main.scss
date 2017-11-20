@@ -218,6 +218,11 @@ header {
     background-color: #fff;
     &.inner-page {
         background-color: #fff;
+        .logo {
+            a {
+                background-color: $main-color;
+            }
+        }
     }
     @include range-width(300px, 768px) {
         margin-bottom: 0;
@@ -319,7 +324,9 @@ header {
         a {
             display: inline-block;
             padding: 1rem 2rem;
-            background-color: $main-color;
+            @include range-width(770px) {
+                background-color: $main-color;
+            }
             @include range-width(300px, 769px) {
                 padding: 0;
                 position: absolute;
