@@ -325,7 +325,7 @@ header {
         a {
             display: inline-block;
             padding: 1rem 2rem;
-            @include range-width(770px) {
+            @include range-width(768px) {
                 background-color: $main-color;
             }
             @include range-width(300px, 768px) {

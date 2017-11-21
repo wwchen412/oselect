@@ -1722,7 +1722,7 @@ header .logo a {
   display: inline-block;
   padding: 1rem 2rem;
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   /* line 325, ../sass/main.scss */
   header .logo a {
     background-color: #323232;
