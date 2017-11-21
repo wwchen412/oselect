@@ -1653,7 +1653,7 @@ header .container .right-top-btn .shipping span {
 }
 /* line 269, ../sass/main.scss */
 header .container .right-top-btn img {
-  width: 20px;
+  width: 23px;
   height: 26px;
 }
 /* line 273, ../sass/main.scss */
@@ -1895,7 +1895,7 @@ header nav ul li a {
   }
   /* line 473, ../sass/main.scss */
   header .container .right-top-btn .shipping span {
-    bottom: 0px;
+    bottom: -3px;
     left: 20px;
     transform: scale(0.75);
   }
