@@ -127,7 +127,7 @@ a.btn {
 }
 
 .pd-y-xs {
-    @include range-width(300px, 769px) {
+    @include range-width(300px, 768px) {
         padding: 0 20px;
     }
 }
@@ -328,7 +328,7 @@ header {
             @include range-width(770px) {
                 background-color: $main-color;
             }
-            @include range-width(300px, 769px) {
+            @include range-width(300px, 768px) {
                 padding: 0;
                 position: absolute;
                 left: 0;
@@ -492,7 +492,7 @@ header {
 
 section {
     margin-bottom: 30px;
-    @include range-width(300px, 769px) {
+    @include range-width(300px, 768px) {
         margin-bottom: 0;
     }
 }

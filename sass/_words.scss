@@ -134,7 +134,7 @@
         right: 0;
         margin: auto;
     }
-    @include range-width(769px) {
+    @include range-width(768px) {
         margin-top: -20px;
     }
     @include range-width(300px, 768px) {

@@ -19,13 +19,13 @@
      h2 {
          //  margin: 60px 0;
          text-align: center;
-         @include range-width(300px, 769px) {
+         @include range-width(300px, 768px) {
              margin: 20px 0 10px;
              text-align: left;
          }
      }
      hr {
-         @include range-width(300px, 769px) {
+         @include range-width(300px, 768px) {
              width: calc(100% + 46px *2);
              transform: translateX(-46px);
          }
@@ -36,7 +36,7 @@
      .o-select-6 {
          margin-right: 150px;
          width: calc(100% / 2 - (150px / 2));
-         @include range-width(300px, 769px) {
+         @include range-width(300px, 768px) {
              margin-right: 0;
              width: 100%;
          }
@@ -57,7 +57,7 @@
  
  .info-contents {
      padding: 40px 0;
-     @include range-width(300px, 769px) {
+     @include range-width(300px, 768px) {
          padding-top: 26px !important;
      }
      p {
@@ -97,7 +97,7 @@
          box-shadow: inset 0 3px 2px -2px rgba(51, 51, 51, .2);
          >.title {
              @extend %form;
-             @include range-width(300px, 769px) {
+             @include range-width(300px, 768px) {
                  flex: auto !important;
                  width: 20%;
                  text-align: center;
@@ -112,7 +112,7 @@
          &.hidden-sm {
              .title {
                  @extend %form;
-                 @include range-width(300px, 769px) {
+                 @include range-width(300px, 768px) {
                      width: calc(100% / 3);
                      text-align: center;
                  }
@@ -137,7 +137,7 @@
          box-shadow: 0 3px 2px -2px rgba(51, 51, 51, .2);
          .content {
              @extend %form;
-             @include range-width(300px, 769px) {
+             @include range-width(300px, 768px) {
                  flex: auto;
                  width: 20%;
                  text-align: center;
@@ -176,7 +176,7 @@
              display: inline-block;
              vertical-align: middle;
              width: 12.5%;
-             @include range-width(300px, 769px) {
+             @include range-width(300px, 768px) {
                  width: 20%;
                  padding: 0 5px;
              }
@@ -190,7 +190,7 @@
          &.hidden-sm {
              box-shadow: 0 3px 2px -2px rgba(51, 51, 51, .2);
              .content-list {
-                 @include range-width(300px, 769px) {
+                 @include range-width(300px, 768px) {
                      width: 33%;
                      text-align: center;
                  }
@@ -208,7 +208,7 @@
              display: inline-block;
              width: 12.5%;
              text-align: left;
-             @include range-width(300px, 769px) {
+             @include range-width(300px, 768px) {
                  width: 25%;
                  text-align: right;
                  padding: 0 20px;
@@ -238,7 +238,7 @@
  }
  
  .member-form-edit {
-     @include range-width(769px, 0) {
+     @include range-width(768px, 0) {
          h2 {
              margin: 60px 0px;
          }

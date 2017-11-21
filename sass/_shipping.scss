@@ -1,7 +1,7 @@
 @import '_color.scss';
 @import '_mixin.scss';
 .container.container-form {
-    @include range-width(300px, 769px) {
+    @include range-width(300px, 768px) {
         padding: 0 46px;
     }
 }
@@ -11,7 +11,7 @@
     margin-right: 150px;
     display: inline-block;
     vertical-align: top;
-    @include range-width(300px, 769px) {
+    @include range-width(300px, 768px) {
         width: 100%;
         margin: 0;
         h2 {
@@ -67,7 +67,7 @@
     width: calc(40% - (150px / 2));
     display: inline-block;
     vertical-align: top;
-    @include range-width(300px, 769px) {
+    @include range-width(300px, 768px) {
         width: 100%;
         margin: 0;
     }
@@ -107,7 +107,7 @@
     .o-select-6 {
         width: calc(100% / 2 - (30px / 2));
         margin-right: 30px;
-        @include range-width(300px, 769px) {
+        @include range-width(300px, 768px) {
             width: 100%;
             margin: 0;
         }
@@ -118,7 +118,7 @@
     }
     .shipping-img {
         width: 300px;
-        @include range-width(300px, 769px) {
+        @include range-width(300px, 768px) {
             width: 100%;
         }
     }
@@ -128,7 +128,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        @include range-width(300px, 769px) {
+        @include range-width(300px, 768px) {
             width: 100%;
         }
         &>* {
@@ -147,7 +147,7 @@
         }
     }
     &.shipping-list-form {
-        @include range-width(300px, 769px) {
+        @include range-width(300px, 768px) {
             flex-direction: column;
         }
         // .o-select-6 {
@@ -155,7 +155,7 @@
         // }
         .shipping-img,
         .shipping-content {
-            @include range-width(300px, 769px) {
+            @include range-width(300px, 768px) {
                 width: 100%;
             }
         }
@@ -227,7 +227,7 @@
 .form-group.o-select-6 {
     width: calc(100% / 2 - (15px / 2));
     margin-right: 15px;
-    @include range-width(300px, 769px) {
+    @include range-width(300px, 768px) {
         width: 100%;
         margin: 0;
     }
