@@ -248,16 +248,17 @@ header {
             }
             .shipping {
                 position: relative;
-                margin-right: 16px;
+                margin-right: 21px;
                 img {
-                    width: 23px;
+                    width: 16px;
                 }
                 span {
                     position: absolute;
                     bottom: 4px;
                     font-size: 0.7rem;
+                    left: 20px;
+                    transform: scale(0.75);
                     text-align: center;
-                    left: 0;
                     right: 0;
                     margin: auto;
                     @include range-width(300px, 768px) {
@@ -272,7 +273,7 @@ header {
             .member {
                 position: relative;
                 img {
-                    width: 20px;
+                    width: 16px;
                 }
                 ul {
                     display: block;
@@ -375,7 +376,7 @@ header {
         padding: 0;
         .container {
             .right-top-btn {
-                padding: 11px 0;
+                padding: 14px 0;
                 position: relative;
                 top: 0;
                 display: flex;
@@ -470,7 +471,9 @@ header {
                 }
                 .shipping {
                     span {
-                        bottom: 3px;
+                        bottom: 0px;
+                        left: 20px;
+                        transform: scale(0.75);
                     }
                 }
             }
