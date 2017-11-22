@@ -266,13 +266,17 @@ input[type="radio"] {
     background: #fff;
     &:checked {
         &:before {
-            content: '✓';
+            content: '';
             position: absolute;
-            top: 0;
-            left: 50%;
+            top: 7px;
+            left: 3px;
             transform: translateX(-50%);
-            font-size: 1rem;
-            margin: auto;
+            background: white;
+            width: 2px;
+            height: 2px;
+            box-shadow: 2px 0 0 $main-color, 4px 0 0 $main-color, 4px -2px 0 $main-color, 4px -4px 0 $main-color, 4px -6px 0 $main-color, 4px -8px 0 $main-color;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
         }
     }
 }

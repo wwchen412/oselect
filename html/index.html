@@ -106,7 +106,13 @@
     <div id="wrap" class="index">
         <div id="hero-img">
             <div class="container container-fluid-sm">
-                <img src="../Content/img/heroimg.png" alt="" class="rwd-img hidden-xs">
+                <!-- desk slider -->
+                <ul class="pc-slider  hidden-xs">
+                    <li> <img src="../Content/img/heroimg.png" alt="" class="rwd-img"></li>
+                    <li> <img src="../Content/img/heroimg.png" alt="" class="rwd-img"></li>
+
+                </ul>
+
                 <img src="../Content/img/m-heroimg.png" alt="" class="rwd-img hidden-sm">
                 <div class="arrow-down"><img src="../Content/img/arrow-down.svg" class="rwd-img hidden-sm"></div>
             </div>
@@ -289,9 +295,16 @@
     </script>
 
     <script>
-        $(function() {
+        $(".pc-slider > li:gt(0)").hide();
 
-        })
+        setInterval(function() {
+            $('.pc-slider > li:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('.pc-slider');
+        }, 5000);
     </script>
 </body>
 
