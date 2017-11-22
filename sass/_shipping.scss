@@ -263,6 +263,7 @@ input[type="radio"] {
     vertical-align: middle;
     position: relative;
     padding: 8px;
+    background: #fff;
     &:checked {
         &:before {
             content: '✓';
