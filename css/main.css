@@ -802,11 +802,11 @@ label.error {
   }
   /* line 254, ../sass/_member.scss */
   .member-form-edit p {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   /* line 257, ../sass/_member.scss */
   .member-form-edit #member-form {
-    padding-top: 30px;
+    padding-top: 10px;
   }
 }
 
@@ -1043,12 +1043,17 @@ label.error {
   font-size: 0.8rem;
   margin-top: 12pt;
   font-weight: bold;
+  color: #D1D1D1;
 }
-/* line 197, ../sass/_shipping.scss */
+/* line 198, ../sass/_shipping.scss */
 .status ol li.active .dot {
   background-color: #3c5082;
 }
 /* line 201, ../sass/_shipping.scss */
+.status ol li.active p {
+  color: #323232;
+}
+/* line 205, ../sass/_shipping.scss */
 .status ol li .dot {
   line-height: 34px;
   text-align: center;
@@ -1062,56 +1067,58 @@ label.error {
   font-weight: bold;
   margin: 0 auto;
 }
-/* line 215, ../sass/_shipping.scss */
+/* line 219, ../sass/_shipping.scss */
 .status ol li:last-child {
   margin: 0;
 }
-/* line 218, ../sass/_shipping.scss */
+/* line 222, ../sass/_shipping.scss */
 .status ol li:last-child .dot:after {
   display: none;
 }
 
-/* line 227, ../sass/_shipping.scss */
+/* line 231, ../sass/_shipping.scss */
 .form-group.o-select-6 {
   width: calc(100% / 2 - (15px / 2));
   margin-right: 15px;
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 227, ../sass/_shipping.scss */
+  /* line 231, ../sass/_shipping.scss */
   .form-group.o-select-6 {
     width: 100%;
     margin: 0;
   }
 }
-/* line 235, ../sass/_shipping.scss */
+/* line 239, ../sass/_shipping.scss */
 .form-group.o-select-6 .select select,
 .form-group.o-select-6 .select label {
   width: 100%;
 }
-/* line 240, ../sass/_shipping.scss */
+/* line 244, ../sass/_shipping.scss */
 .form-group.o-select-6 input[type="radio"] {
   width: auto;
   vertical-align: middle;
   margin: 15px 0;
   margin-right: 5px;
 }
-/* line 246, ../sass/_shipping.scss */
+/* line 250, ../sass/_shipping.scss */
 .form-group.o-select-6 label {
   font-size: .9rem;
 }
 
-/* line 251, ../sass/_shipping.scss */
+/* line 255, ../sass/_shipping.scss */
 input[type="checkbox"],
 input[type="radio"] {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  border: 1px solid #323232;
+  border: 1px solid #D1D1D1;
+  border-radius: 3px;
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  padding: 8px;
 }
-/* line 261, ../sass/_shipping.scss */
+/* line 267, ../sass/_shipping.scss */
 input[type="checkbox"]:checked:before,
 input[type="radio"]:checked:before {
   content: '✓';
@@ -1123,7 +1130,7 @@ input[type="radio"]:checked:before {
   margin: auto;
 }
 
-/* line 273, ../sass/_shipping.scss */
+/* line 279, ../sass/_shipping.scss */
 .sucess-title {
   padding: 30px 0 0;
 }
@@ -1260,34 +1267,35 @@ input[type="radio"]:checked:before {
   /* line 102, ../sass/_words.scss */
   .join .join-content .content-block p {
     text-align: justify;
+    margin-bottom: 10px;
   }
 }
-/* line 106, ../sass/_words.scss */
+/* line 107, ../sass/_words.scss */
 .join .join-content .content-block span {
   color: #CECECE;
   font-size: 0.8rem;
 }
-/* line 110, ../sass/_words.scss */
+/* line 111, ../sass/_words.scss */
 .join .join-content .content-block h2 {
   margin-bottom: 40px;
 }
-/* line 113, ../sass/_words.scss */
+/* line 114, ../sass/_words.scss */
 .join .join-content .content-block b {
   margin-right: 5px;
 }
-/* line 116, ../sass/_words.scss */
+/* line 117, ../sass/_words.scss */
 .join .join-content .content-block .btn {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 125, ../sass/_words.scss */
+/* line 126, ../sass/_words.scss */
 .banner-img {
   position: relative;
   height: calc(100vh - 127px);
 }
-/* line 128, ../sass/_words.scss */
+/* line 129, ../sass/_words.scss */
 .banner-img .arrow-down {
   width: 80px;
   margin: 0 auto;
@@ -1298,18 +1306,18 @@ input[type="radio"]:checked:before {
   margin: auto;
 }
 @media screen and (min-width: 768px) {
-  /* line 125, ../sass/_words.scss */
+  /* line 126, ../sass/_words.scss */
   .banner-img {
     margin-top: -20px;
   }
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 125, ../sass/_words.scss */
+  /* line 126, ../sass/_words.scss */
   .banner-img {
     height: calc(100vh - 50px);
   }
 }
-/* line 143, ../sass/_words.scss */
+/* line 144, ../sass/_words.scss */
 .banner-img h2 {
   position: absolute;
   top: 50%;
@@ -1318,12 +1326,12 @@ input[type="radio"]:checked:before {
   font-size: 3rem;
 }
 @media screen and (max-width: 767px) and (min-width: 300px) {
-  /* line 143, ../sass/_words.scss */
+  /* line 144, ../sass/_words.scss */
   .banner-img h2 {
     font-size: 2rem;
   }
 }
-/* line 153, ../sass/_words.scss */
+/* line 154, ../sass/_words.scss */
 .banner-img > img {
   object-fit: cover;
   width: 100%;
