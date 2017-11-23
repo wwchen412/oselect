@@ -249,13 +249,13 @@
     <script>
         $(function() {
             var window_Width = $(window).width();
-            console.log(window_Width);
+            // console.log(window_Width);
             if (window_Width > 768) {
 
 
                 $('.toggle-news').each(function() {
                     var newsH = $(this).height();
-                    console.log(newsH);
+                    // console.log(newsH);
                     if (newsH >= 230) {
                         $(this).append('<div class="readmore"><p>〈Read More〉</p></div>');
                         $('.readmore').click(function() {
