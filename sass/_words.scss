@@ -263,17 +263,43 @@
                     height: 100%;
                 }
             }
-            &+div {
+            &+.toggle-news {
                 padding-left: 23px;
                 width: calc(100% - 273px);
+                max-height: 250px;
+                position: relative;
+                overflow: hidden;
+                transition: 1s;
+                &.active {
+                    overflow: visible;
+                    height: auto;
+                    max-height: 100%;
+                }
                 @include range-width(300px, 769px) {
                     width: 100%;
                     padding: 23px 46px;
+                    overflow: visible;
+                    max-height: 100%;
                 }
                 h3 {
                     padding: 23px 0;
                     @include range-width(300px, 769px) {
                         padding: 0 0 36px;
+                    }
+                }
+                .readmore {
+                    position: absolute;
+                    bottom: 0;
+                    left: 23px;
+                    background-color: #fff;
+                    width: 100%;
+                    height: 20px;
+                    letter-spacing: 2px;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                    @include range-width(300px, 769px) {
+                        display: none;
                     }
                 }
             }
