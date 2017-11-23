@@ -96,7 +96,7 @@
             padding: 0px 31px;
         }
         .content-block {
-            margin: 100px 0 50px;
+            margin: 50px 0 50px;
             @include range-width(300px, 768px) {
                 margin: 0px 0 40px;
                 p {
@@ -145,6 +145,12 @@
             .list {
                 font-size: 1rem;
                 height: 50px;
+                position: relative;
+                span {
+                    position: absolute;
+                    left: calc(50% + 10px);
+                    font-size: 0.9rem;
+                }
             }
             &:first-child {
                 .list {
