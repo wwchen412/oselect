@@ -96,7 +96,7 @@
             padding: 0px 31px;
         }
         .content-block {
-            margin: 100px 0;
+            margin: 100px 0 50px;
             @include range-width(300px, 768px) {
                 margin: 46px 0;
                 p {
@@ -118,6 +118,38 @@
                 max-width: 400px;
                 margin: 0 auto;
                 text-align: center;
+            }
+        }
+    }
+    .join-form {
+        font-size: 0;
+        .form-coloum {
+            width: calc(100% / 3);
+            display: inline-block;
+            vertical-align: top;
+            &>* {
+                padding: 15px;
+                border-bottom: 1px solid $border-color;
+                &>* {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                img {
+                    width: 20px;
+                    margin-right: 10px;
+                }
+            }
+            .title {
+                height: 100px;
+            }
+            .list {
+                font-size: 1rem;
+                height: 50px;
+            }
+            &:first-child {
+                .list {
+                    text-align: left;
+                }
             }
         }
     }

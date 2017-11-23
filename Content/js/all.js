@@ -139,20 +139,6 @@ $('.arrow-down').click(function() {
 })
 
 
-// 首頁header 手機版
-$(window).scroll(function() {
-    var window_top = $(window).scrollTop();
-    var window_width = $(window).width();
-    var shop_itemsTop = $('.shop-items').offset().top;
-    if (window_width < 768) {
-        if (window_top > shop_itemsTop) {
-            $('header.index').css('background', '#323232');
-        } else {
-            $('header.index').css('background', 'transparent');
-        }
-    }
-
-})
 
 // 共用footer 之後需刪除
 $('footer').load('_footer.html');
