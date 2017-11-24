@@ -249,22 +249,22 @@
     <script>
         $(function() {
             var window_Width = $(window).width();
-            // console.log(window_Width);
-            if (window_Width > 768) {
+            console.log(window_Width);
 
 
-                $('.toggle-news').each(function() {
-                    var newsH = $(this).height();
-                    // console.log(newsH);
-                    if (newsH >= 230) {
-                        $(this).append('<div class="readmore"><p>〈Read More〉</p></div>');
-                        $('.readmore').click(function() {
-                            $(this).parent('.toggle-news').addClass('active');
-                            $(this).remove();
-                        })
-                    }
-                })
-            }
+
+            $('.toggle-news').each(function() {
+                var newsH = $(this).height();
+                console.log(newsH);
+                if (newsH >= 230) {
+                    $(this).append('<div class="readmore"><p>〈Read More〉</p></div>');
+                    $('.readmore').click(function() {
+                        $(this).parent('.toggle-news').addClass('active');
+                        $(this).remove();
+                    })
+                }
+            })
+
         })
     </script>
 </body>

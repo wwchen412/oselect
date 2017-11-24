@@ -136,7 +136,7 @@
                     vertical-align: middle;
                 }
                 img {
-                    width: 20px;
+                    width: 16px;
                     margin-right: 10px;
                 }
             }
@@ -277,9 +277,10 @@
                 }
                 @include range-width(300px, 769px) {
                     width: 100%;
-                    padding: 23px 46px;
-                    overflow: visible;
-                    max-height: 100%;
+                    padding: 0px 46px;
+                    margin: 23px 0;
+                    // overflow: visible;
+                    // max-height: 100%;
                 }
                 h3 {
                     padding: 23px 0;
@@ -299,7 +300,7 @@
                     font-weight: bold;
                     cursor: pointer;
                     @include range-width(300px, 769px) {
-                        display: none;
+                        left: 46px;
                     }
                 }
             }

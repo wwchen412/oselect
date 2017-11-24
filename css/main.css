@@ -1316,7 +1316,7 @@ input[type="radio"]:checked:before {
 }
 /* line 138, ../sass/_words.scss */
 .join .join-form .form-coloum > * img {
-  width: 20px;
+  width: 16px;
   margin-right: 10px;
 }
 /* line 143, ../sass/_words.scss */
@@ -1491,22 +1491,21 @@ input[type="radio"]:checked:before {
   /* line 266, ../sass/_words.scss */
   .container-news li .img-wrap + .toggle-news {
     width: 100%;
-    padding: 23px 46px;
-    overflow: visible;
-    max-height: 100%;
+    padding: 0px 46px;
+    margin: 23px 0;
   }
 }
-/* line 284, ../sass/_words.scss */
+/* line 285, ../sass/_words.scss */
 .container-news li .img-wrap + .toggle-news h3 {
   padding: 23px 0;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 284, ../sass/_words.scss */
+  /* line 285, ../sass/_words.scss */
   .container-news li .img-wrap + .toggle-news h3 {
     padding: 0 0 36px;
   }
 }
-/* line 290, ../sass/_words.scss */
+/* line 291, ../sass/_words.scss */
 .container-news li .img-wrap + .toggle-news .readmore {
   position: absolute;
   bottom: 0;
@@ -1520,17 +1519,17 @@ input[type="radio"]:checked:before {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) and (min-width: 300px) {
-  /* line 290, ../sass/_words.scss */
+  /* line 291, ../sass/_words.scss */
   .container-news li .img-wrap + .toggle-news .readmore {
-    display: none;
+    left: 46px;
   }
 }
-/* line 307, ../sass/_words.scss */
+/* line 308, ../sass/_words.scss */
 .container-news li > div {
   display: inline-block;
   vertical-align: top;
 }
-/* line 311, ../sass/_words.scss */
+/* line 312, ../sass/_words.scss */
 .container-news li img {
   display: block;
   width: 100%;
